@@ -499,8 +499,8 @@
               "id"           : "HTTP_status_code",
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "302 Found ('/')"
+              "severity"     : "WARN",
+              "finding"      : "Unexpected 502 Bad Gateway @ '/'"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
@@ -514,7 +514,7 @@
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1655886440"
+              "finding"      : "1655895334"
           }
 ,         {
               "id"           : "HSTS",
@@ -632,10 +632,10 @@
               "id"           : "BREACH",
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/109.232.236.90",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, identity gzip deflate compress br HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1565,8 +1565,8 @@
               "id"           : "HTTP_status_code",
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "302 Found ('/')"
+              "severity"     : "WARN",
+              "finding"      : "Unexpected 502 Bad Gateway @ '/'"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
@@ -1580,7 +1580,7 @@
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1655886573"
+              "finding"      : "1655895476"
           }
 ,         {
               "id"           : "HSTS",
@@ -1698,10 +1698,10 @@
               "id"           : "BREACH",
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, identity gzip deflate compress br HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -2136,6 +2136,6 @@
               "ip"           : "opentermsarchive.osc-fr1.scalingo.io/5.104.101.30",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "271"
+              "finding"      : "289"
           }
 ]
