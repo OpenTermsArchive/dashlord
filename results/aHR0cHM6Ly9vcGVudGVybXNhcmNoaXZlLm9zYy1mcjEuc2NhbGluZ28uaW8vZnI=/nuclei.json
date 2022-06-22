@@ -1,0 +1,684 @@
+[
+  {
+    "template": "ssl/ssl-dns-names.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/ssl-dns-names.yaml",
+    "template-id": "ssl-dns-names",
+    "info": {
+      "name": "SSL DNS Names",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "extracted-results": [
+      "*.osc-fr1.scalingo.io",
+      "osc-fr1.scalingo.io"
+    ],
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:18.380628923Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "dns/dns-waf-detect.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/dns/dns-waf-detect.yaml",
+    "template-id": "dns-waf-detect",
+    "info": {
+      "name": "DNS WAF Detection",
+      "author": [
+        "lu4nx"
+      ],
+      "tags": [
+        "tech",
+        "waf",
+        "dns"
+      ],
+      "description": "A DNS WAF was detected.",
+      "reference": null,
+      "severity": "info",
+      "classification": {
+        "cve-id": null,
+        "cwe-id": [
+          "cwe-200"
+        ]
+      }
+    },
+    "matcher-name": "cloudflare",
+    "type": "dns",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": ";; opcode: QUERY, status: NOERROR, id: 32324\n;; flags: rd; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 4096\n\n;; QUESTION SECTION:\n;opentermsarchive.osc-fr1.scalingo.io.\tIN\t NS\n",
+    "response": ";; opcode: QUERY, status: NOERROR, id: 32324\n;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1\n\n;; OPT PSEUDOSECTION:\n; EDNS: version 0; flags: ; udp: 1232\n\n;; QUESTION SECTION:\n;opentermsarchive.osc-fr1.scalingo.io.\tIN\t NS\n\n;; ANSWER SECTION:\nopentermsarchive.osc-fr1.scalingo.io.\t300\tIN\tCNAME\tsc-lb-pool-01.osc-fr1.scalingo-network.com.\n\n;; AUTHORITY SECTION:\nscalingo-network.com.\t3600\tIN\tSOA\tburt.ns.cloudflare.com. dns.cloudflare.com. 2277339532 10000 2400 604800 3600\n",
+    "timestamp": "2022-06-22T08:33:37.646723812Z",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-frame-options",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.656937834Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-credentials",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.657067036Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-headers",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.657086936Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "content-security-policy",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658569359Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "permission-policy",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658623859Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-embedder-policy",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.65864776Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-expose-headers",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.65867866Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-max-age",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658699861Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "referrer-policy",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658720861Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "strict-transport-security",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658750761Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-content-type-options",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658768762Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "x-permitted-cross-domain-policies",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658790562Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "clear-site-data",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658820662Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-opener-policy",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658849463Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "cross-origin-resource-policy",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658866163Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-origin",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658884963Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "misconfiguration/http-missing-security-headers.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/http-missing-security-headers.yaml",
+    "template-id": "http-missing-security-headers",
+    "info": {
+      "name": "HTTP Missing Security Headers",
+      "author": [
+        "socketz",
+        "geeknik",
+        "g4l1t0",
+        "convisoappsec",
+        "kurohost",
+        "dawid-czarnecki",
+        "forgedhallpass"
+      ],
+      "tags": [
+        "misconfig",
+        "generic"
+      ],
+      "description": "This template searches for missing HTTP security headers. The impact of these missing headers can vary.\n",
+      "reference": null,
+      "severity": "info"
+    },
+    "matcher-name": "access-control-allow-methods",
+    "type": "http",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "request": "GET /fr HTTP/1.1\r\nHost: opentermsarchive.osc-fr1.scalingo.io\r\nUser-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)\r\nConnection: close\r\nAccept: */*\r\nAccept-Language: en\r\nAccept-Encoding: gzip\r\n\r\n",
+    "response": "HTTP/1.1 502 Bad Gateway\r\nConnection: close\r\nTransfer-Encoding: chunked\r\nContent-Encoding: identity\r\nContent-Type: text/html\r\nDate: Wed, 22 Jun 2022 08:33:39 GMT\r\nX-Request-Id: c2d0ebfd-746e-42bd-a0d6-bc49f6902f3b\r\n\r\n<!DOCTYPE html><html><head><meta charset='utf-8'><meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'><meta content='width=device-width, initial-scale=1.0' name='viewport'><title>Application Error</title><style>html { height: 100%;}body { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; text-align: center; height: 100%; margin: 0; padding: 0; background: -webkit-gradient(linear, left top, left bottom, from(#1864ab), to(#099ec9)) left top/100% 100% no-repeat #1864ab; background: linear-gradient(to bottom, #1864ab, #099ec9) left top/100% 100% no-repeat #1864ab; color: white;}#wrapper { position: relative; top: 40%; -webkit-transform: translateY(-40%); transform: translateY(-40%);}h1 { font-size: 2rem; font-weight: 700; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); font-family: \"Lato\", sans-serif; margin: 0; paddding: 0;}p { margin-left: auto; margin-right: auto; width: 768px;}p em { margin-top: 1em; font-family: \"Lato\", sans-serif;}</style></head><body><div id='wrapper'><h1>Application Error</h1><p><em>The application has stopped responding unexpectedly.<br>If you're the application owner, check your logs and metrics for details.</em></p></div></body></html>\n",
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:39.658913764Z",
+    "curl-command": "curl -X 'GET' -d '' -H 'Accept: */*' -H 'Accept-Language: en' -H 'User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)' 'https://opentermsarchive.osc-fr1.scalingo.io/fr'",
+    "matcher-status": true,
+    "matched-line": null
+  },
+  {
+    "template": "ssl/tls-version.yaml",
+    "template-url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/ssl/tls-version.yaml",
+    "template-id": "tls-version",
+    "info": {
+      "name": "TLS Version",
+      "author": [
+        "pdteam"
+      ],
+      "tags": [
+        "ssl"
+      ],
+      "reference": null,
+      "severity": "info"
+    },
+    "type": "ssl",
+    "host": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "matched-at": "https://opentermsarchive.osc-fr1.scalingo.io/fr",
+    "extracted-results": [
+      "TLS13"
+    ],
+    "ip": "5.104.101.30",
+    "timestamp": "2022-06-22T08:33:44.577525966Z",
+    "matcher-status": true,
+    "matched-line": null
+  }
+]
