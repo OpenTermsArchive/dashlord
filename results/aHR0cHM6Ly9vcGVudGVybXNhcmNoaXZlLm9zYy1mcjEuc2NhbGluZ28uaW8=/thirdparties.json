@@ -2,19 +2,15 @@
   "trackers": [],
   "cookies": [],
   "headers": {
-    "cache-control": "s-maxage=10, stale-while-revalidate",
-    "content-encoding": "gzip",
-    "content-type": "text/html; charset=utf-8",
-    "date": "Wed, 22 Jun 2022 08:26:10 GMT",
-    "etag": "\"c405-WrK/790WLV6rft9XdsuobS90otY\"",
-    "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js",
-    "x-request-id": "fe3bd6bb-5aad-4296-939d-6969e684dbd1"
+    "content-encoding": "identity",
+    "content-type": "text/html",
+    "date": "Wed, 22 Jun 2022 10:54:33 GMT",
+    "x-request-id": "88ee9bb2-60a9-4ec9-91f6-c369017cac87"
   },
   "endpoints": [
     {
       "hostname": "opentermsarchive.osc-fr1.scalingo.io",
-      "ip": "5.104.101.30",
+      "ip": "109.232.236.90",
       "geoip": {
         "continent": {
           "code": "EU",
