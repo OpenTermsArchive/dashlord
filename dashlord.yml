@@ -1,4 +1,4 @@
-title: DashLord example
+title: DashLord for Open Terms Archive
 description: Bonnes pratiques techniques
 entity: Ministères sociaux
 footer: Powered by SocialGouv
@@ -20,9 +20,7 @@ tools:
   stats: false
   declaration-a11y: true
 urls:
-  - url: https://www.fabrique.social.gouv.fr
-    repositories:
-      - socialgouv/www
-    docker:
-      - ghcr.io/socialgouv/fabrique/frontend
-  - url: https://beta.gouv.fr
+  - url: https://opentermsarchive.osc-fr1.scalingo.io
+  - url: https://opentermsarchive.osc-fr1.scalingo.io/fr
+  - url: https://opentermsarchive.org
+  - url: https://opentermsarchive.org/fr
