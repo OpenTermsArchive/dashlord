@@ -20,10 +20,10 @@ tools:
   stats: false
   declaration-a11y: true
 urls:
-  - url: https://opentermsarchive.osc-fr1.scalingo.io
+  - url: https://opentermsarchive-org.osc-secnum-fr1.scalingo.io
     repositories:
       - ambanum/OpenTermsArchive.org
-  - url: https://opentermsarchive.osc-fr1.scalingo.io/fr
+  - url: https://opentermsarchive-org.osc-secnum-fr1.scalingo.io/fr
     repositories:
       - ambanum/OpenTermsArchive.org
   - url: https://opentermsarchive.org
