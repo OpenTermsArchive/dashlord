@@ -21,6 +21,14 @@ tools:
   declaration-a11y: true
 urls:
   - url: https://opentermsarchive.osc-fr1.scalingo.io
+    repositories:
+      - ambanum/OpenTermsArchive.org
   - url: https://opentermsarchive.osc-fr1.scalingo.io/fr
+    repositories:
+      - ambanum/OpenTermsArchive.org
   - url: https://opentermsarchive.org
+    repositories:
+      - ambanum/OpenTermsArchive.org
   - url: https://opentermsarchive.org/fr
+    repositories:
+      - ambanum/OpenTermsArchive.org
