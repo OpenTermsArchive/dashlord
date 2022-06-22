@@ -556,14 +556,14 @@
               "ip"           : "opentermsarchive.org/51.75.169.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "opentermsarchive.org/51.75.169.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1655887063"
+              "finding"      : "1655895878"
           }
 ,         {
               "id"           : "HSTS",
@@ -1142,6 +1142,6 @@
               "ip"           : "opentermsarchive.org/51.75.169.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "144"
+              "finding"      : "192"
           }
 ]
