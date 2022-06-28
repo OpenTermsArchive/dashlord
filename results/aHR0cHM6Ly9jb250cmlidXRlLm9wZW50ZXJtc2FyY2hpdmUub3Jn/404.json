@@ -1,0 +1,43 @@
+{
+  "links": [
+    {
+      "url": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "contribute.opentermsarchive.org",
+        "port": null,
+        "hostname": "contribute.opentermsarchive.org",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/",
+        "path": "/",
+        "href": "https://contribute.opentermsarchive.org/"
+      },
+      "link": "https://contribute.opentermsarchive.org/",
+      "line": "--2022-06-28 11:55:49--  https://contribute.opentermsarchive.org/",
+      "broken": false
+    },
+    {
+      "url": {
+        "protocol": null,
+        "slashes": null,
+        "auth": null,
+        "host": null,
+        "port": null,
+        "hostname": null,
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "(try:%202)%20%20https://contribute.opentermsarchive.org/",
+        "path": "(try:%202)%20%20https://contribute.opentermsarchive.org/",
+        "href": "(try:%202)%20%20https://contribute.opentermsarchive.org/"
+      },
+      "link": "(try: 2)  https://contribute.opentermsarchive.org/",
+      "line": "--2022-06-28 11:55:51--  (try: 2)  https://contribute.opentermsarchive.org/",
+      "broken": false
+    }
+  ],
+  "broken": []
+}
