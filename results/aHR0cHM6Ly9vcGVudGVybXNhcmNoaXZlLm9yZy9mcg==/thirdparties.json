@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "opentermsarchive.org",
       "path": "/",
-      "expires": 1656210625,
+      "expires": 1656419358,
       "size": 17,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.179.cd52",
-      "value": "62582ca6f9c6299b.1656208825.",
+      "value": "d0e980280ab826d6.1656417559.",
       "domain": "opentermsarchive.org",
       "path": "/",
-      "expires": 1690164025,
+      "expires": 1690372759,
       "size": 43,
       "httpOnly": false,
       "secure": false,
@@ -34,20 +34,18 @@
   ],
   "headers": {
     "cache-control": "s-maxage=10, stale-while-revalidate",
-    "connection": "keep-alive",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 26 Jun 2022 02:00:24 GMT",
-    "etag": "\"e78a-4l2krdJEdYFYtpmX7ZP0RrwX1oU\"",
-    "server": "nginx/1.14.2",
-    "transfer-encoding": "chunked",
+    "date": "Tue, 28 Jun 2022 11:59:17 GMT",
+    "etag": "\"f826-OeDA1xcFSVvNEIpbsJWcQi47KeE\"",
     "vary": "Accept-Encoding",
-    "x-powered-by": "Next.js"
+    "x-powered-by": "Next.js",
+    "x-request-id": "07c84754-da4a-4fd2-b443-0113da9d2626"
   },
   "endpoints": [
     {
       "hostname": "opentermsarchive.org",
-      "ip": "51.75.169.235",
+      "ip": "185.21.194.105",
       "geoip": {
         "continent": {
           "code": "EU",
