@@ -26,3 +26,9 @@ urls:
   - url: https://opentermsarchive.org/fr
     repositories:
       - ambanum/OpenTermsArchive.org
+  - url: https://contribute.opentermsarchive.org
+    repositories:
+      - OpenTermsArchive/contribution-tool
+  - url: https://contribute.opentermsarchive.org/fr
+    repositories:
+      - OpenTermsArchive/contribution-tool
