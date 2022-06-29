@@ -11,12 +11,9 @@ on:
     - cron: "0 0 * * 0" # see https://crontab.guru
   push:
     branches:
-      - master
       - main
     paths:
-      - 'dashlord.yaml'
       - 'dashlord.yml'
-      - 'urls.txt'
 
 # allow only one concurrent scan action
 concurrency:
