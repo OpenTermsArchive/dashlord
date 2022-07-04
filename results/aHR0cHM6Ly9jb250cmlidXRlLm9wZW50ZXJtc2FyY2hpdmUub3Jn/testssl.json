@@ -563,7 +563,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.75.169.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1656925209"
+              "finding"      : "1656929918"
           }
 ,         {
               "id"           : "HSTS",
@@ -1142,6 +1142,6 @@
               "ip"           : "contribute.opentermsarchive.org/51.75.169.235",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "136"
+              "finding"      : "134"
           }
 ]
