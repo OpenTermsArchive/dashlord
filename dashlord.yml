@@ -36,10 +36,3 @@ urls:
     repositories:
       - OpenTermsArchive/contribution-tool
  
-  - url: https://contributenew.opentermsarchive.org
-    repositories:
-      - OpenTermsArchive/contribution-tool
-      
-  - url: https://contributenew.opentermsarchive.org/fr
-    repositories:
-      - OpenTermsArchive/contribution-tool
