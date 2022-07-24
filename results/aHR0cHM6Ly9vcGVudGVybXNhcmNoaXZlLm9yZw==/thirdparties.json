@@ -6,7 +6,7 @@
       "value": "1",
       "domain": "opentermsarchive.org",
       "path": "/",
-      "expires": 1658024701,
+      "expires": 1658629675,
       "size": 17,
       "httpOnly": false,
       "secure": false,
@@ -18,10 +18,10 @@
     },
     {
       "name": "_pk_id.179.cd52",
-      "value": "0ff45255a98d346d.1658022901.",
+      "value": "f52e5cf25908cdaf.1658627875.",
       "domain": "opentermsarchive.org",
       "path": "/",
-      "expires": 1691978101,
+      "expires": 1692583075,
       "size": 43,
       "httpOnly": false,
       "secure": false,
@@ -37,20 +37,20 @@
     "content-encoding": "gzip",
     "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 17 Jul 2022 01:55:00 GMT",
-    "etag": "\"cc71-AFHuKqfE1KQ5bqkgLnmcTmYc2MU\"",
+    "date": "Sun, 24 Jul 2022 01:57:54 GMT",
+    "etag": "\"cc71-Vs2MalsOMYfFWjisOXvQrkq9KF0\"",
     "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
     "vary": "Accept-Encoding",
     "x-content-type-options": "nosniff",
     "x-frame-options": "DENY",
     "x-powered-by": "Next.js",
-    "x-request-id": "bba60853-8905-4c91-8056-63dee5cfffe9",
+    "x-request-id": "cbdc0d39-b2be-426f-84ae-0766372097a1",
     "x-xss-protection": "1; mode=block"
   },
   "endpoints": [
     {
       "hostname": "opentermsarchive.org",
-      "ip": "185.21.194.105",
+      "ip": "148.253.96.193",
       "geoip": {
         "continent": {
           "code": "EU",
