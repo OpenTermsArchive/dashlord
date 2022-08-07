@@ -185,7 +185,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -353,7 +353,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "57 >= 30 days"
+              "finding"      : "50 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1659232859"
+              "finding"      : "1659837076"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1321,7 +1321,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'next protocol/#13172' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
+              "finding"      : "'renegotiation info/#65281' 'server name/#0' 'EC point formats/#11' 'session ticket/#35' 'supported versions/#43' 'key share/#51' 'supported_groups/#10' 'max fragment length/#1' 'application layer protocol negotiation/#16' 'encrypt-then-mac/#22' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -1489,7 +1489,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "57 >= 30 days"
+              "finding"      : "50 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1692,7 +1692,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1659232949"
+              "finding"      : "1659837209"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2276,6 +2276,6 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "184"
+              "finding"      : "271"
           }
 ]
