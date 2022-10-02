@@ -16,45 +16,7 @@
         "href": "https://contribute.opentermsarchive.org/"
       },
       "link": "https://contribute.opentermsarchive.org/",
-      "line": "--2022-09-25 02:02:06--  https://contribute.opentermsarchive.org/",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "contribute.opentermsarchive.org",
-        "port": null,
-        "hostname": "contribute.opentermsarchive.org",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/en/",
-        "path": "/en/",
-        "href": "https://contribute.opentermsarchive.org/en/"
-      },
-      "link": "https://contribute.opentermsarchive.org/en/",
-      "line": "--2022-09-25 02:02:07--  https://contribute.opentermsarchive.org/en/",
-      "broken": false
-    },
-    {
-      "url": {
-        "protocol": "https:",
-        "slashes": true,
-        "auth": null,
-        "host": "contribute.opentermsarchive.org",
-        "port": null,
-        "hostname": "contribute.opentermsarchive.org",
-        "hash": null,
-        "search": null,
-        "query": null,
-        "pathname": "/en",
-        "path": "/en",
-        "href": "https://contribute.opentermsarchive.org/en"
-      },
-      "link": "https://contribute.opentermsarchive.org/en",
-      "line": "--2022-09-25 02:02:07--  https://contribute.opentermsarchive.org/en",
+      "line": "--2022-10-02 02:06:14--  https://contribute.opentermsarchive.org/",
       "broken": false
     },
     {
@@ -73,7 +35,7 @@
         "href": "https://contribute.opentermsarchive.org/robots.txt"
       },
       "link": "https://contribute.opentermsarchive.org/robots.txt",
-      "line": "--2022-09-25 02:02:08--  https://contribute.opentermsarchive.org/robots.txt",
+      "line": "--2022-10-02 02:06:15--  https://contribute.opentermsarchive.org/robots.txt",
       "broken": false
     }
   ],

@@ -352,8 +352,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (15)"
+              "severity"     : "HIGH",
+              "finding"      : "expires < 15 days (8)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +366,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
-              "severity"     : "MEDIUM",
+              "severity"     : "HIGH",
               "finding"      : "2022-10-10 10:14"
           }
 ,         {
@@ -542,7 +542,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "307 Temporary Redirect ('/')"
+              "finding"      : "200 OK ('/')"
           }
 ,         {
               "id"           : "HTTP_clock_skew",
@@ -556,7 +556,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1664071626"
+              "finding"      : "1664676604"
           }
 ,         {
               "id"           : "HSTS",
@@ -584,21 +584,21 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "X-Powered-By: Express"
+              "finding"      : "X-Powered-By: Next.js"
           }
 ,         {
               "id"           : "cookie_count",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 at '/' (30x detected, better try target URL of 30x)"
+              "finding"      : "0 at '/'"
           }
 ,         {
-              "id"           : "security_headers",
+              "id"           : "Cache-Control",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "--"
+              "severity"     : "INFO",
+              "finding"      : "s-maxage=1800, stale-while-revalidate"
           }
 ,         {
               "id"           : "banner_reverseproxy",
@@ -674,10 +674,10 @@
               "id"           : "BREACH",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "cve"          : "CVE-2013-3587",
               "cwe"          : "CWE-310",
-              "finding"      : "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+              "finding"      : "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
           }
 ,         {
               "id"           : "POODLE_SSL",
@@ -1112,6 +1112,6 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "89"
+              "finding"      : "134"
           }
 ]

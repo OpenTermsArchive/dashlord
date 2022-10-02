@@ -2,14 +2,14 @@
   "trackers": [],
   "cookies": [],
   "headers": {
-    "cache-control": "s-maxage=10, stale-while-revalidate",
+    "cache-control": "s-maxage=1800, stale-while-revalidate",
     "content-encoding": "gzip",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 25 Sep 2022 02:06:03 GMT",
-    "etag": "\"4788-Sm+Q1Tcg+Lauv5QyCXiHdBqhua4\"",
+    "date": "Sun, 02 Oct 2022 02:08:55 GMT",
+    "etag": "\"p2fi05avydazq\"",
     "server": "nginx",
     "vary": "Accept-Encoding",
-    "x-nextjs-cache": "STALE",
+    "x-nextjs-cache": "HIT",
     "x-powered-by": "Next.js"
   },
   "endpoints": [
