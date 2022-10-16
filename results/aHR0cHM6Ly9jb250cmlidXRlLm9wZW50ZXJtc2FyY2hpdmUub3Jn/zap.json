@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 9 Oct 2022 01:58:56",
+	"@generated": "Sun, 16 Oct 2022 02:12:33",
 	"site":[ 
 		{
 			"@name": "https://contribute.opentermsarchive.org",
@@ -188,7 +188,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-1a99f238711db174.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -338,7 +338,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/babc34867bcd5f23.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -434,14 +434,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/aff43b4df3184d98.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/babc34867bcd5f23.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/98bff3300eedf599.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -520,14 +520,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/tcX2EhneLnW4BRljh8eH6/_buildManifest"
+							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/tcX2EhneLnW4BRljh8eH6/_buildManifest"
+							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/175-1cc67634c3d689cb.js",
@@ -537,32 +537,25 @@
 							"evidence": "HeaderMenu_headerMenu__secondary__rl8Z2"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-a108e5fea371275b.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-3e329d09a9e829ce.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Button_button__secondary__k_k5w"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/aff43b4df3184d98.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/98bff3300eedf599.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "Button_button__secondary__k_k5w"
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/d527ba98f25ee1fe.css",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "Column_column__hasAlign__VYlj9"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/tcX2EhneLnW4BRljh8eH6/_buildManifest"
+							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/safari-pinned-tab.svg",
@@ -576,12 +569,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/tcX2EhneLnW4BRljh8eH6/_buildManifest"
+							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
 						}
 					],
-					"count": "9",
+					"count": "8",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\_a!\uFFFD\uFFFD\uFFFD[\uFFFDQ\uFFFD8|x~\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0012\uFFFD\\\uFFFD\uFFFD@\uFFFDJ\uFFFD\\x0010\uFFFD\uFFFD\r\uFFFD(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -645,7 +638,7 @@
 							"evidence": "from"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-a108e5fea371275b.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-3e329d09a9e829ce.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -949,7 +942,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "35"
+					"sourceid": "33"
 				}
 			]
 		}
