@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 16 Oct 2022 02:12:37",
+	"@generated": "Sun, 23 Oct 2022 02:00:52",
 	"site":[ 
 		{
 			"@name": "https://opentermsarchive.org",
@@ -47,20 +47,6 @@
 							"evidence": "<form>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms+of+Service&service=Twitter",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
-						},
-						{
 							"uri": "https://opentermsarchive.org/fr",
 							"method": "GET",
 							"param": "",
@@ -87,22 +73,15 @@
 							"param": "",
 							"attack": "",
 							"evidence": "<form>"
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<form>"
 						}
 					],
-					"count": "11",
+					"count": "8",
 					"solution": "<p>Phase: Architecture and Design</p><p>Use a vetted library or framework that does not allow this weakness to occur or provides constructs that make this weakness easier to avoid.</p><p>For example, use anti-CSRF packages such as the OWASP CSRFGuard.</p><p></p><p>Phase: Implementation</p><p>Ensure that your application is free of cross-site scripting issues, because most CSRF defenses can be bypassed using attacker-controlled script.</p><p></p><p>Phase: Architecture and Design</p><p>Generate a unique nonce for each form, place the nonce into the form, and verify the nonce upon receipt of the form. Be sure that the nonce is not predictable (CWE-330).</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Identify especially dangerous operations. When the user performs a dangerous operation, send a separate confirmation request to ensure that the user intended to perform that operation.</p><p>Note that this can be bypassed using XSS.</p><p></p><p>Use the ESAPI Session Management control.</p><p>This control includes a component for CSRF.</p><p></p><p>Do not use the GET method for any request that triggers a state change.</p><p></p><p>Phase: Implementation</p><p>Check the HTTP Referer header to see if the request originated from an expected page. This could break legitimate functionality, because users or proxies may have disabled sending the Referer for privacy reasons.</p>",
 					"otherinfo": "<p>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: \"email\" \"locale\" ].</p>",
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "90022",
@@ -128,7 +107,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "193"
+					"sourceid": "190"
 				},
 				{
 					"pluginid": "10055",
@@ -182,7 +161,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10055",
@@ -236,7 +215,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10063",
@@ -332,7 +311,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10037",
@@ -428,7 +407,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10094",
@@ -524,7 +503,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10019",
@@ -633,28 +612,7 @@
 					"desc": "<p>The request appeared to contain sensitive information leaked in the URL. This can violate PCI and most organizational compliance policies. You can configure the list of strings for this check to add or remove values specific to your environment.</p>",
 					"instances":[ 
 						{
-							"uri": "https://opentermsarchive.org/en/subscribe?consent=on&documentType&documentType=Terms%20of%20Service&email=foo-bar%40example.com&service=Amazon.com&service=Twitter",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/subscribe?consent=on&documentType&documentType=Terms+of+Service&email=foo-bar%40example.com&service=Amazon.com&service=Twitter",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
-						},
-						{
 							"uri": "https://opentermsarchive.org/en/subscribe?consent=on&documentType&email=foo-bar%40example.com&service=Amazon.com",
-							"method": "GET",
-							"param": "email",
-							"attack": "",
-							"evidence": "foo-bar@example.com"
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?consent=on&documentType&documentType=Terms%20of%20Service&email=foo-bar%40example.com&service=Amazon.com&service=Twitter",
 							"method": "GET",
 							"param": "email",
 							"attack": "",
@@ -668,13 +626,13 @@
 							"evidence": "foo-bar@example.com"
 						}
 					],
-					"count": "5",
+					"count": "2",
 					"solution": "<p>Do not pass sensitive information in URIs.</p>",
 					"otherinfo": "<p>The URL contains email address(es).</p>",
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "319"
+					"sourceid": "307"
 				},
 				{
 					"pluginid": "10027",
@@ -770,7 +728,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10109",
@@ -866,7 +824,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10049",
@@ -995,7 +953,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "75"
+					"sourceid": "78"
 				},
 				{
 					"pluginid": "10049",
@@ -1029,13 +987,6 @@
 							"evidence": "s-maxage=60"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=60"
-						},
-						{
 							"uri": "https://opentermsarchive.org/en/media",
 							"method": "GET",
 							"param": "",
@@ -1051,6 +1002,13 @@
 						},
 						{
 							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=60"
+						},
+						{
+							"uri": "https://opentermsarchive.org/fr/media",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -1109,97 +1067,41 @@
 					"desc": "<p>This check looks at user-supplied input in query string parameters and POST data to identify where certain HTML attribute values might be controlled. This provides hot-spot detection for XSS (cross-site scripting) that will require further review by a security analyst to determine exploitability.</p>",
 					"instances":[ 
 						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
+							"uri": "https://opentermsarchive.org/en/subscribe?consent=on&documentType&email=foo-bar%40example.com&service=Amazon.com",
+							"method": "GET",
+							"param": "consent",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://opentermsarchive.org/en/subscribe?consent=on&documentType&email=foo-bar%40example.com&service=Amazon.com",
 							"method": "GET",
 							"param": "service",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
+							"uri": "https://opentermsarchive.org/fr/subscribe?consent=on&documentType&email=foo-bar%40example.com&service=Amazon.com",
 							"method": "GET",
-							"param": "service",
+							"param": "consent",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
-							"method": "GET",
-							"param": "service",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/subscribe?documentType=Terms%20of%20Service&service=Twitter",
+							"uri": "https://opentermsarchive.org/fr/subscribe?consent=on&documentType&email=foo-bar%40example.com&service=Amazon.com",
 							"method": "GET",
 							"param": "service",
 							"attack": "",
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "4",
 					"solution": "<p>Validate all input and sanitize output it before writing to any HTML attributes.</p>",
-					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://opentermsarchive.org/en/subscribe?documentType=Terms%20of%20Service&service=Twitter</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [meta] tag [name] attribute </p><p></p><p>The user input found was:</p><p>service=Twitter</p><p></p><p>The user-controlled value was:</p><p>twitter:card</p>",
+					"otherinfo": "<p>User-controlled HTML attribute values were found. Try injecting special characters to see if XSS might be possible. The page at the following URL:</p><p></p><p>https://opentermsarchive.org/en/subscribe?consent=on&documentType&email=foo-bar%40example.com&service=Amazon.com</p><p></p><p>appears to include user input in: </p><p></p><p>a(n) [option] tag [value] attribute </p><p></p><p>The user input found was:</p><p>consent=on</p><p></p><p>The user-controlled value was:</p><p>onlyfans</p>",
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "302"
+					"sourceid": "307"
 				}
 			]
 		}
