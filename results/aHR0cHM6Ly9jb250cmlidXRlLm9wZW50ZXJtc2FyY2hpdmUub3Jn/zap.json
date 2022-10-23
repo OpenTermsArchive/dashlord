@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 16 Oct 2022 02:12:33",
+	"@generated": "Sun, 23 Oct 2022 02:00:31",
 	"site":[ 
 		{
 			"@name": "https://contribute.opentermsarchive.org",
@@ -188,7 +188,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -434,14 +434,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/595b691002b58efa.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/98bff3300eedf599.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -520,14 +520,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/175-1cc67634c3d689cb.js",
@@ -555,7 +555,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/safari-pinned-tab.svg",
@@ -569,12 +569,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						}
 					],
 					"count": "8",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0012\uFFFD\\\uFFFD\uFFFD@\uFFFDJ\uFFFD\\x0010\uFFFD\uFFFD\r\uFFFD(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0011`G\u0692\uFFFD\uFFFD\\x0000\uFFFD\uFFFD\u04BA\uFFFDC\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -942,7 +942,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "33"
+					"sourceid": "34"
 				}
 			]
 		}
