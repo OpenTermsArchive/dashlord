@@ -1,6 +1,6 @@
 {
 	"@version": "2.11.1",
-	"@generated": "Sun, 16 Oct 2022 02:20:30",
+	"@generated": "Sun, 23 Oct 2022 02:07:25",
 	"site":[ 
 		{
 			"@name": "https://contribute.opentermsarchive.org",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "40"
+					"sourceid": "52"
 				},
 				{
 					"pluginid": "10038",
@@ -160,14 +160,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -221,20 +221,6 @@
 							"evidence": "X-Powered-By: Express"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/main-7a4bb7041d5ba526.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Express"
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/_app-3e5d7b4d5d9ff35e.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Express"
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
 							"method": "GET",
 							"param": "",
@@ -242,7 +228,7 @@
 							"evidence": "X-Powered-By: Express"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -250,6 +236,20 @@
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Express"
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/apple-touch-icon.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Express"
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/favicon-32x32.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -310,20 +310,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/main-7a4bb7041d5ba526.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/_app-3e5d7b4d5d9ff35e.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
 							"method": "GET",
 							"param": "",
@@ -331,7 +317,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -339,6 +325,20 @@
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/apple-touch-icon.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/favicon-32x32.png",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -399,27 +399,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/main-7a4bb7041d5ba526.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/_app-3e5d7b4d5d9ff35e.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/_error-f0b09bc6116f4f7e.js",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -427,7 +406,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -435,6 +414,27 @@
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/apple-touch-icon.png",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/favicon-16x16.png",
+							"method": "GET",
+							"param": "X-Content-Type-Options",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/favicon-32x32.png",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -478,7 +478,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/175-1cc67634c3d689cb.js",
@@ -506,7 +506,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/safari-pinned-tab.svg",
@@ -520,12 +520,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/QSp1yRgUDpSq4QvvUNlyj/_buildManifest"
+							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
 						}
 					],
 					"count": "7",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0012\uFFFD\\\uFFFD\uFFFD@\uFFFDJ\uFFFD\\x0010\uFFFD\uFFFD\r\uFFFD(\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0011`G\u0692\uFFFD\uFFFD\\x0000\uFFFD\uFFFD\u04BA\uFFFDC\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -555,7 +555,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "53"
+					"sourceid": "46"
 				},
 				{
 					"pluginid": "10027",
@@ -765,20 +765,6 @@
 							"evidence": "max-age=31536000"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/main-7a4bb7041d5ba526.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/_app-3e5d7b4d5d9ff35e.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "max-age=31536000"
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
 							"method": "GET",
 							"param": "",
@@ -786,7 +772,7 @@
 							"evidence": "max-age=31536000"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-6e1b8805ffd3a0b2.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -814,7 +800,7 @@
 							"evidence": ""
 						}
 					],
-					"count": "9",
+					"count": "7",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
@@ -833,6 +819,20 @@
 					"desc": "<p>The response contents are storable by caching components such as proxy servers, but will not be retrieved directly from the cache, without validating the request upstream, in response to similar requests from other users. </p>",
 					"instances":[ 
 						{
+							"uri": "https://contribute.opentermsarchive.org/apple-touch-icon.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/favicon-32x32.png",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=0"
+						},
+						{
 							"uri": "https://contribute.opentermsarchive.org/robots.txt",
 							"method": "GET",
 							"param": "",
@@ -840,13 +840,13 @@
 							"evidence": "max-age=0"
 						}
 					],
-					"count": "1",
+					"count": "3",
 					"solution": "",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "8"
+					"sourceid": "40"
 				}
 			]
 		}
