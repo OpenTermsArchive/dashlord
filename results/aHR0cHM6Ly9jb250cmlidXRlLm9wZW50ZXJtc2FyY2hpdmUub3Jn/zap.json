@@ -1,6 +1,6 @@
 {
-	"@version": "2.11.1",
-	"@generated": "Sun, 23 Oct 2022 02:00:31",
+	"@version": "2.12.0",
+	"@generated": "Sun, 30 Oct 2022 02:00:55",
 	"site":[ 
 		{
 			"@name": "https://contribute.opentermsarchive.org",
@@ -32,7 +32,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "50"
+					"sourceid": "51"
 				},
 				{
 					"pluginid": "10038",
@@ -92,13 +92,6 @@
 					"desc": "<p>The response does not include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options to protect against 'ClickJacking' attacks.</p>",
 					"instances":[ 
 						{
-							"uri": "https://contribute.opentermsarchive.org",
-							"method": "GET",
-							"param": "X-Frame-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/",
 							"method": "GET",
 							"param": "X-Frame-Options",
@@ -113,13 +106,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "3",
+					"count": "2",
 					"solution": "<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p><p>If you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "32"
 				},
 				{
 					"pluginid": "10063",
@@ -153,14 +146,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/413-9acca16631d03e39.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/framework-5f9637ca1e7aac10.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-03ace7695bfef89c.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -181,6 +167,13 @@
 							"evidence": ""
 						},
 						{
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/index-888009013f675a14.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
 							"method": "GET",
 							"param": "",
@@ -189,6 +182,13 @@
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-3580210ae2c3fa19.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/_next/static/Xnc9okMBLH0GmB-5SvJdL/_buildManifest.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -209,13 +209,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "11",
+					"count": "12",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Permissions-Policy header.</p>",
 					"otherinfo": "",
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10037",
@@ -338,7 +338,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/595b691002b58efa.css",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -441,7 +441,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/6dbcf3869c37d364.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/98bff3300eedf599.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -520,14 +520,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
+							"evidence": "/_next/static/Xnc9okMBLH0GmB-5SvJdL/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
+							"evidence": "/_next/static/Xnc9okMBLH0GmB-5SvJdL/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/175-1cc67634c3d689cb.js",
@@ -537,7 +537,7 @@
 							"evidence": "HeaderMenu_headerMenu__secondary__rl8Z2"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-3e329d09a9e829ce.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-03ace7695bfef89c.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -555,7 +555,7 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
+							"evidence": "/_next/static/Xnc9okMBLH0GmB-5SvJdL/_buildManifest"
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/safari-pinned-tab.svg",
@@ -569,12 +569,12 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/cRYEfakpmNANbf0rr3Q7C/_buildManifest"
+							"evidence": "/_next/static/Xnc9okMBLH0GmB-5SvJdL/_buildManifest"
 						}
 					],
 					"count": "8",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\\x0011`G\u0692\uFFFD\uFFFD\\x0000\uFFFD\uFFFD\u04BA\uFFFDC\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD\uFFFDs\uFFFD$0\\x0012\uFFFD\uFFFDi\uFFFD\uFFFD\uFFFD\uFFFD%\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -638,7 +638,7 @@
 							"evidence": "from"
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-3e329d09a9e829ce.js",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/416-03ace7695bfef89c.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -861,6 +861,13 @@
 							"evidence": "s-maxage=1800"
 						},
 						{
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/595b691002b58efa.css",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "max-age=31536000"
+						},
+						{
 							"uri": "https://contribute.opentermsarchive.org/fr",
 							"method": "GET",
 							"param": "",
@@ -875,13 +882,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "4",
+					"count": "5",
 					"solution": "<p>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</p><p>Cache-Control: no-cache, no-store, must-revalidate, private</p><p>Pragma: no-cache</p><p>Expires: 0</p><p>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request. </p>",
 					"otherinfo": "",
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
