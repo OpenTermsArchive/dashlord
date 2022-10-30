@@ -283,7 +283,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04DE6D13E38A0225792985B7EA1E2EAC827A"
+              "finding"      : "0312430A4A7BCBD74CE53EA78651394F9B68"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -297,21 +297,21 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "E117D1EC917ED9C52D7955BD2E2DF194356C489E"
+              "finding"      : "16A8C0D821B10AFAACED6DA7703C2CCE8D1B3BEB"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ACED37546C9021843D5D09387AE47F4592B95B4CE927FAE3223510619B4C99B4"
+              "finding"      : "769D14BFA81D4C1DE960BDBBEFCEE3F57A670CA3330C2F7AA7C0A56D40DF04B3"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLjCCBBagAwIBAgISBN5tE+OKAiV5KYW36h4urIJ6MA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA4MjcwMzM3MDlaFw0yMjExMjUwMzM3MDhaMB8xHTAbBgNVBAMT FG9wZW50ZXJtc2FyY2hpdmUub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAzZvWoklkwspr3+MaP43p5fO581Q26Rv96aZqaDAi3/2TUIw5tw/gdODh YJSB7bxsscGP1rLMtbbE3np3FKLcJIBWeQ5+5Ay7jUBl28RKU960mUO2b6MQeULI XMqhK2/qg1FEPK66TBu7/sTeHHyI1vZ1uqTt2VlCHHw2d+0xA5DZd14se2ztwlDJ mXYDPfSxxW/gzjGZNuhkL+S5ihuXkO2ttlYKdCcVB8+ngvKZtCxbd2XPHTyVrOXj IbPrKhBih64bxqNV4N4OOYw3hp/aBt30OvfPfklyTKIN8q/ejf5X530TcGQD5mx2 LylGHHj8PzJ5A5X+8vo4WKrGaH/VIwIDAQABo4ICTzCCAkswDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBQp2n42vy9xbpopi69iTUC9YXmWdDAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRvcGVudGVybXNhcmNoaXZlLm9yZzBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2 AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABgt2W5QoAAAQDAEcw RQIgVnS584kCIPUqndnA15NYI0scp6CZ3SYqiKfzY+ks/dQCIQCF6c+xG8yK88l4 uTeCnaXeXYQdhLGb7p6JsiJHUyFM0AB2AG9Tdqwx8DEZ2JkApFEV/3cVHBHZAsEA KQaNsgiaN9kTAAABgt2W5bUAAAQDAEcwRQIhAMLDiSY0e0xG/Cb/ZEjNp2ELl/Y1 zX5msF1RmVNueLvUAiBeW8VPNBG46fD/Gw0Xj+jJRQbSjBNZfNvGsvQEIrl2FzAN BgkqhkiG9w0BAQsFAAOCAQEAh6kasKbDxO8At4AAEhe5a05hpE0tmui9U6GF+n3z 56AQcfBULK9r7iV9H9q2EQspGHMxv3P6OHSIPHvzYIK0sISfFAi06Uuir8iXgtjk jqXy8NWPsg7KdXPXx53+MxTgbSHcPveeSLHdZN9ORGthoitTz5cQCnLFScaSBKUM wfqbeDa+K4wb4HqX8XI1YxjQJTmqUDL1eXegvpA055PI+3Y8mNOJZ7u1YTAweIY6 ugwAp4PhF48AClA+dr4toapzzoipLq/ww1I7Bh/j8zxJiLrS6scTN7XvIqRi80Ba LoUl45NluYt3VQTjqeXso3PQdmrCBcn7Z3FmbyQX24aIFg== -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLTCCBBWgAwIBAgISAxJDCkp7y9dM5T6nhlE5T5toMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjEwMjYwMzQwMTFaFw0yMzAxMjQwMzQwMTBaMB8xHTAbBgNVBAMT FG9wZW50ZXJtc2FyY2hpdmUub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEA6F/aqUayh36CHM2mMdQFN+2v+RTY01hbSe1cIU+sgqWQ4gSkpCfwgfhA YTubT4NWuleBh9Q98kJnN4Yw/45w64cMMxKDb7GlgTtpy/O6JYfZW16LyuJYbAoF KhklHNdInLjakPrd5gbMzx2Qw7MAiMJ6F4UhXBQoSXpdu2wvBY0c8LWZRdwl0Zw8 1kB+CTJmQHY7YP8iF+sQMb7z8REEjzm3sbIXjkIDg+Z1jFDHM39ZXtni1FzQj0ee Vc/iX6R8pvoHcXX1IhOhvYuZ3TfqoqAMYNpbYvL2maSb7IyucBtWZnrkHw7qKa7g 9PkwFT4nosF8n3X5qzU6LBs+JTTI+wIDAQABo4ICTjCCAkowDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBQVYaA3ilhsmSoV49T1I9ObWk04wDAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRvcGVudGVybXNhcmNoaXZlLm9yZzBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhBKXOsQAAAQDAEYw RAIgFI2OUE+9NaDkLc/zL/qRTUhkaIGls70mGC4C88J5ZbwCIEENYpdDaVdKW1+1 m71aiSNO9y6uI9pM2li3MRQDxt/5AHYAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvS K8E6V6NS61IAAAGEEpc66AAABAMARzBFAiEAuBAoKGWLZpDXiA6k28ZRUWKMteP7 Ut8z8V8AS6QbcZgCIEzzvah3DQYVeekXVYNKUur8Korwlq00XcFkJSVFG58HMA0G CSqGSIb3DQEBCwUAA4IBAQBb23jlOYpSyVU6yuSFlzJhA8XdCKYrUlZxuG++VIe7 5qi65ZhKr4iuDkPHsv/eSn2XFszGnhDNwF1n3sg73ivkwu0ulPab9QHKjXVcVOxL MO5wZ48z5RC4umhrXMJO2bl1kwH9t2zBL/SToDhA9HwIu31jZO5r9ioNwALzBShq V6dfVky9t5yfPTFebtuu9kOJsQ5MyeA/CmCsjqSvDx5ZidAw7OihbMY71J8iOe72 ry80aqZWCfF6B0c/tOYxtfsr69QssNuLMQ2YneM7jzZv/XFhm/UUtJS9KjYcvSB/ t/fBIxfv+AiMntkOZu0ernE/TNd/4gRaBrGRsJAaWSOk -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -360,21 +360,21 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "finding"      : "86 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-08-27 03:37"
+              "finding"      : "2022-10-26 03:40"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-11-25 03:37"
+              "finding"      : "2023-01-24 03:40"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -563,7 +563,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1666490568"
+              "finding"      : "1667095479"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -771,7 +771,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=ACED37546C9021843D5D09387AE47F4592B95B4CE927FAE3223510619B4C99B4"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=769D14BFA81D4C1DE960BDBBEFCEE3F57A670CA3330C2F7AA7C0A56D40DF04B3"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1426,7 +1426,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04DE6D13E38A0225792985B7EA1E2EAC827A"
+              "finding"      : "0312430A4A7BCBD74CE53EA78651394F9B68"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -1440,21 +1440,21 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "E117D1EC917ED9C52D7955BD2E2DF194356C489E"
+              "finding"      : "16A8C0D821B10AFAACED6DA7703C2CCE8D1B3BEB"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ACED37546C9021843D5D09387AE47F4592B95B4CE927FAE3223510619B4C99B4"
+              "finding"      : "769D14BFA81D4C1DE960BDBBEFCEE3F57A670CA3330C2F7AA7C0A56D40DF04B3"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLjCCBBagAwIBAgISBN5tE+OKAiV5KYW36h4urIJ6MA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjA4MjcwMzM3MDlaFw0yMjExMjUwMzM3MDhaMB8xHTAbBgNVBAMT FG9wZW50ZXJtc2FyY2hpdmUub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEAzZvWoklkwspr3+MaP43p5fO581Q26Rv96aZqaDAi3/2TUIw5tw/gdODh YJSB7bxsscGP1rLMtbbE3np3FKLcJIBWeQ5+5Ay7jUBl28RKU960mUO2b6MQeULI XMqhK2/qg1FEPK66TBu7/sTeHHyI1vZ1uqTt2VlCHHw2d+0xA5DZd14se2ztwlDJ mXYDPfSxxW/gzjGZNuhkL+S5ihuXkO2ttlYKdCcVB8+ngvKZtCxbd2XPHTyVrOXj IbPrKhBih64bxqNV4N4OOYw3hp/aBt30OvfPfklyTKIN8q/ejf5X530TcGQD5mx2 LylGHHj8PzJ5A5X+8vo4WKrGaH/VIwIDAQABo4ICTzCCAkswDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBQp2n42vy9xbpopi69iTUC9YXmWdDAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRvcGVudGVybXNhcmNoaXZlLm9yZzBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB2 AEalVet1+pEgMLWiiWn0830RLEF0vv1JuIWr8vxw/m1HAAABgt2W5QoAAAQDAEcw RQIgVnS584kCIPUqndnA15NYI0scp6CZ3SYqiKfzY+ks/dQCIQCF6c+xG8yK88l4 uTeCnaXeXYQdhLGb7p6JsiJHUyFM0AB2AG9Tdqwx8DEZ2JkApFEV/3cVHBHZAsEA KQaNsgiaN9kTAAABgt2W5bUAAAQDAEcwRQIhAMLDiSY0e0xG/Cb/ZEjNp2ELl/Y1 zX5msF1RmVNueLvUAiBeW8VPNBG46fD/Gw0Xj+jJRQbSjBNZfNvGsvQEIrl2FzAN BgkqhkiG9w0BAQsFAAOCAQEAh6kasKbDxO8At4AAEhe5a05hpE0tmui9U6GF+n3z 56AQcfBULK9r7iV9H9q2EQspGHMxv3P6OHSIPHvzYIK0sISfFAi06Uuir8iXgtjk jqXy8NWPsg7KdXPXx53+MxTgbSHcPveeSLHdZN9ORGthoitTz5cQCnLFScaSBKUM wfqbeDa+K4wb4HqX8XI1YxjQJTmqUDL1eXegvpA055PI+3Y8mNOJZ7u1YTAweIY6 ugwAp4PhF48AClA+dr4toapzzoipLq/ww1I7Bh/j8zxJiLrS6scTN7XvIqRi80Ba LoUl45NluYt3VQTjqeXso3PQdmrCBcn7Z3FmbyQX24aIFg== -----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE----- MIIFLTCCBBWgAwIBAgISAxJDCkp7y9dM5T6nhlE5T5toMA0GCSqGSIb3DQEBCwUA MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD EwJSMzAeFw0yMjEwMjYwMzQwMTFaFw0yMzAxMjQwMzQwMTBaMB8xHTAbBgNVBAMT FG9wZW50ZXJtc2FyY2hpdmUub3JnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB CgKCAQEA6F/aqUayh36CHM2mMdQFN+2v+RTY01hbSe1cIU+sgqWQ4gSkpCfwgfhA YTubT4NWuleBh9Q98kJnN4Yw/45w64cMMxKDb7GlgTtpy/O6JYfZW16LyuJYbAoF KhklHNdInLjakPrd5gbMzx2Qw7MAiMJ6F4UhXBQoSXpdu2wvBY0c8LWZRdwl0Zw8 1kB+CTJmQHY7YP8iF+sQMb7z8REEjzm3sbIXjkIDg+Z1jFDHM39ZXtni1FzQj0ee Vc/iX6R8pvoHcXX1IhOhvYuZ3TfqoqAMYNpbYvL2maSb7IyucBtWZnrkHw7qKa7g 9PkwFT4nosF8n3X5qzU6LBs+JTTI+wIDAQABo4ICTjCCAkowDgYDVR0PAQH/BAQD AgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAA MB0GA1UdDgQWBBQVYaA3ilhsmSoV49T1I9ObWk04wDAfBgNVHSMEGDAWgBQULrMX t1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUHMAGGFWh0 dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3IzLmkubGVu Y3Iub3JnLzAfBgNVHREEGDAWghRvcGVudGVybXNhcmNoaXZlLm9yZzBMBgNVHSAE RTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsGAQUFBwIBFhpodHRw Oi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQMGCisGAQQB1nkCBAIEgfQEgfEA7wB1 ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAABhBKXOsQAAAQDAEYw RAIgFI2OUE+9NaDkLc/zL/qRTUhkaIGls70mGC4C88J5ZbwCIEENYpdDaVdKW1+1 m71aiSNO9y6uI9pM2li3MRQDxt/5AHYAejKMVNi3LbYg6jjgUh7phBZwMhOFTTvS K8E6V6NS61IAAAGEEpc66AAABAMARzBFAiEAuBAoKGWLZpDXiA6k28ZRUWKMteP7 Ut8z8V8AS6QbcZgCIEzzvah3DQYVeekXVYNKUur8Korwlq00XcFkJSVFG58HMA0G CSqGSIb3DQEBCwUAA4IBAQBb23jlOYpSyVU6yuSFlzJhA8XdCKYrUlZxuG++VIe7 5qi65ZhKr4iuDkPHsv/eSn2XFszGnhDNwF1n3sg73ivkwu0ulPab9QHKjXVcVOxL MO5wZ48z5RC4umhrXMJO2bl1kwH9t2zBL/SToDhA9HwIu31jZO5r9ioNwALzBShq V6dfVky9t5yfPTFebtuu9kOJsQ5MyeA/CmCsjqSvDx5ZidAw7OihbMY71J8iOe72 ry80aqZWCfF6B0c/tOYxtfsr69QssNuLMQ2YneM7jzZv/XFhm/UUtJS9KjYcvSB/ t/fBIxfv+AiMntkOZu0ernE/TNd/4gRaBrGRsJAaWSOk -----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -1503,21 +1503,21 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "33 >= 30 days"
+              "finding"      : "86 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-08-27 03:37"
+              "finding"      : "2022-10-26 03:40"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2022-11-25 03:37"
+              "finding"      : "2023-01-24 03:40"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -1706,7 +1706,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1666490660"
+              "finding"      : "1667095621"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1914,7 +1914,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=ACED37546C9021843D5D09387AE47F4592B95B4CE927FAE3223510619B4C99B4"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=769D14BFA81D4C1DE960BDBBEFCEE3F57A670CA3330C2F7AA7C0A56D40DF04B3"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -2290,6 +2290,6 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "183"
+              "finding"      : "291"
           }
 ]
