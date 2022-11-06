@@ -8,31 +8,31 @@
     "http": {
       "url": "https://opentermsarchive.org",
       "algorithm_version": 2,
-      "end_time": "Sun, 30 Oct 2022 02:01:30 GMT",
+      "end_time": "Sun, 06 Nov 2022 01:46:59 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
-        "Cache-Control": "s-maxage=10, stale-while-revalidate",
+        "Cache-Control": "s-maxage=31536000, stale-while-revalidate",
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 30 Oct 2022 02:01:26 GMT",
-        "ETag": "\"n9ru0m4f261o6p\"",
+        "Date": "Sun, 06 Nov 2022 01:46:56 GMT",
+        "ETag": "\"14up4hipkp51lg2\"",
         "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "DENY",
         "X-Powered-By": "Next.js",
-        "X-Request-ID": "17c2f841-518b-4070-950e-a93d6f4b30e2",
+        "X-Request-ID": "5e1589f1-351d-4474-83e4-7377a7c43676",
         "X-XSS-Protection": "1; mode=block",
-        "x-nextjs-cache": "STALE"
+        "x-nextjs-cache": "HIT"
       },
-      "scan_id": 30493836,
+      "scan_id": 30683112,
       "score": 70,
-      "start_time": "Sun, 30 Oct 2022 02:01:24 GMT",
+      "start_time": "Sun, 06 Nov 2022 01:46:53 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -56,12 +56,12 @@
                 "https://stats.data.gouv.fr"
               ],
               "img-src": [
-                "https://avatars.githubusercontent.com",
+                "https://www.gravatar.com",
                 "'self'",
                 "https://media-exp1.licdn.com",
-                "https://sibyll.in",
-                "https://www.gravatar.com",
+                "https://avatars.githubusercontent.com",
                 "data:",
+                "https://sibyll.in",
                 "https://pbs.twimg.com"
               ],
               "object-src": [
@@ -156,18 +156,16 @@
           "expectation": "redirection-to-https",
           "name": "redirection",
           "output": {
-            "destination": "http://opentermsarchive.org/en",
-            "redirects": true,
+            "destination": "http://opentermsarchive.org/",
+            "redirects": false,
             "route": [
-              "http://opentermsarchive.org/",
-              "http://opentermsarchive.org/en/",
-              "http://opentermsarchive.org/en"
+              "http://opentermsarchive.org/"
             ],
             "status_code": 200
           },
           "pass": false,
-          "result": "redirection-not-to-https",
-          "score_description": "Redirects, but final destination is not an HTTPS URL",
+          "result": "redirection-missing",
+          "score_description": "Does not redirect to an HTTPS site",
           "score_modifier": -20
         },
         "referrer-policy": {
@@ -262,15 +260,15 @@
       "recipients": [
         "email:3682249898"
       ],
-      "last_check_at": "2022-10-30T01:46:24Z",
-      "next_check_at": "2022-10-30T02:46:08Z",
+      "last_check_at": "2022-11-06T00:56:29Z",
+      "next_check_at": "2022-11-06T01:56:28Z",
       "mute_until": null,
       "favicon_url": "https://opentermsarchive.org/favicon-32x32.png",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-10-29T16:49:27Z",
+        "tested_at": "2022-11-05T17:58:02Z",
         "expires_at": "2023-01-24T03:40:10Z",
         "valid": true,
         "error": null
@@ -278,12 +276,12 @@
       "metrics": {
         "apdex": 1,
         "timings": {
-          "redirect": 338,
-          "namelookup": 0,
-          "connection": 0,
-          "handshake": 0,
-          "response": 85,
-          "total": 424
+          "redirect": 0,
+          "namelookup": 116,
+          "connection": 102,
+          "handshake": 113,
+          "response": 108,
+          "total": 440
         }
       },
       "uptimeGrade": "A",
@@ -535,7 +533,7 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "supported"
+        "finding": "not supported"
       },
       {
         "id": "TLS_timestamp",
@@ -675,7 +673,7 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -864,21 +862,21 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "301 Moved Permanently ('/')"
+        "finding": "200 OK ('/')"
       },
       {
         "id": "HTTP_clock_skew",
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 seconds from localtime"
+        "finding": "-1 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095383"
+        "finding": "1667699334"
       },
       {
         "id": "HSTS_time",
@@ -920,14 +918,14 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "No application banner found"
+        "finding": "X-Powered-By: Next.js"
       },
       {
         "id": "cookie_count",
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
+        "finding": "0 at '/'"
       },
       {
         "id": "X-Frame-Options",
@@ -956,6 +954,13 @@
         "port": "443",
         "severity": "INFO",
         "finding": "1; mode=block"
+      },
+      {
+        "id": "Cache-Control",
+        "ip": "opentermsarchive.org/148.253.96.193",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "s-maxage=31536000, stale-while-revalidate"
       },
       {
         "id": "banner_reverseproxy",
@@ -1031,10 +1036,10 @@
         "id": "BREACH",
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "cve": "CVE-2013-3587",
         "cwe": "CWE-310",
-        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+        "finding": "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
       },
       {
         "id": "POODLE_SSL",
@@ -1818,7 +1823,7 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -2007,21 +2012,21 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "301 Moved Permanently ('/')"
+        "finding": "200 OK ('/')"
       },
       {
         "id": "HTTP_clock_skew",
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095467"
+        "finding": "1667699484"
       },
       {
         "id": "HSTS_time",
@@ -2063,14 +2068,14 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "No application banner found"
+        "finding": "X-Powered-By: Next.js"
       },
       {
         "id": "cookie_count",
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
+        "finding": "0 at '/'"
       },
       {
         "id": "X-Frame-Options",
@@ -2099,6 +2104,13 @@
         "port": "443",
         "severity": "INFO",
         "finding": "1; mode=block"
+      },
+      {
+        "id": "Cache-Control",
+        "ip": "opentermsarchive.org/185.21.194.105",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "s-maxage=31536000, stale-while-revalidate"
       },
       {
         "id": "banner_reverseproxy",
@@ -2174,10 +2186,10 @@
         "id": "BREACH",
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "cve": "CVE-2013-3587",
         "cwe": "CWE-310",
-        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+        "finding": "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
       },
       {
         "id": "POODLE_SSL",
@@ -2605,7 +2617,7 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "173"
+        "finding": "299"
       }
     ],
     "thirdparties": {
@@ -2616,7 +2628,7 @@
           "value": "1",
           "domain": "opentermsarchive.org",
           "path": "/",
-          "expires": 1667097122,
+          "expires": 1667701057,
           "size": 17,
           "httpOnly": false,
           "secure": false,
@@ -2628,10 +2640,10 @@
         },
         {
           "name": "_pk_id.179.cd52",
-          "value": "d3f2ea7f15739a0e.1667095323.",
+          "value": "28752e54b5de4502.1667699257.",
           "domain": "opentermsarchive.org",
           "path": "/",
-          "expires": 1701050523,
+          "expires": 1701654457,
           "size": 43,
           "httpOnly": false,
           "secure": false,
@@ -2643,19 +2655,19 @@
         }
       ],
       "headers": {
-        "cache-control": "s-maxage=10, stale-while-revalidate",
+        "cache-control": "s-maxage=31536000, stale-while-revalidate",
         "content-encoding": "gzip",
         "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 30 Oct 2022 02:02:01 GMT",
-        "etag": "\"n9ru0m4f261o6p\"",
+        "date": "Sun, 06 Nov 2022 01:47:36 GMT",
+        "etag": "\"14up4hipkp51lg2\"",
         "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
         "vary": "Accept-Encoding",
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
-        "x-nextjs-cache": "STALE",
+        "x-nextjs-cache": "HIT",
         "x-powered-by": "Next.js",
-        "x-request-id": "f14ed28b-0bdf-4ef5-a545-ee5b41297e8b",
+        "x-request-id": "6bdd6543-fe05-4575-b914-355e762226fd",
         "x-xss-protection": "1; mode=block"
       },
       "endpoints": [
@@ -2717,199 +2729,10 @@
         }
       ]
     },
-    "wappalyzer": {
-      "urls": {
-        "https://opentermsarchive.org/": {
-          "status": 301
-        },
-        "https://opentermsarchive.org/en/": {
-          "status": 308
-        },
-        "https://opentermsarchive.org/en": {
-          "status": 200
-        }
-      },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "node.js.png",
-          "website": "http://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "react",
-          "name": "React",
-          "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
-          "confidence": 100,
-          "version": null,
-          "icon": "React.svg",
-          "website": "https://reactjs.org",
-          "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "next-js",
-          "name": "Next.js",
-          "description": "Next.js is a React framework for developing single page Javascript applications.",
-          "confidence": 100,
-          "version": "12.3.1",
-          "icon": "vercel.svg",
-          "website": "https://nextjs.org",
-          "cpe": "cpe:2.3:a:zeit:next.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 18,
-              "slug": "web-frameworks",
-              "name": "Web frameworks"
-            },
-            {
-              "id": 22,
-              "slug": "web-servers",
-              "name": "Web servers"
-            }
-          ]
-        },
-        {
-          "slug": "matomo-analytics",
-          "name": "Matomo Analytics",
-          "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Matomo.png",
-          "website": "https://matomo.org",
-          "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 10,
-              "slug": "analytics",
-              "name": "Analytics"
-            }
-          ]
-        },
-        {
-          "slug": "lodash",
-          "name": "Lodash",
-          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
-          "confidence": 100,
-          "version": "4.17.21",
-          "icon": "Lo-dash.png",
-          "website": "http://www.lodash.com",
-          "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "hsts",
-          "name": "HSTS",
-          "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
-          "confidence": 100,
-          "version": null,
-          "icon": "default.svg",
-          "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
-        },
-        {
-          "slug": "webpack",
-          "name": "webpack",
-          "description": "Webpack is an open-source JavaScript module bundler.",
-          "confidence": 100,
-          "version": null,
-          "icon": "webpack.svg",
-          "website": "https://webpack.js.org/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "pwa",
-          "name": "PWA",
-          "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
-          "confidence": 100,
-          "version": null,
-          "icon": "PWA.svg",
-          "website": "https://web.dev/progressive-web-apps/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "open-graph",
-          "name": "Open Graph",
-          "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Open Graph.png",
-          "website": "https://ogp.me",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "module-federation",
-          "name": "Module Federation",
-          "description": "Module Federation is a webpack technology for dynamically loading parts of other independently deployed builds.",
-          "confidence": 50,
-          "version": null,
-          "icon": "Module Federation.png",
-          "website": "https://webpack.js.org/concepts/module-federation/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        }
-      ]
-    },
+    "wappalyzer": null,
     "zap": {
       "@version": "2.12.0",
-      "@generated": "Sun, 30 Oct 2022 02:01:06",
+      "@generated": "Sun, 6 Nov 2022 01:46:34",
       "site": [
         {
           "@name": "https://opentermsarchive.org",
@@ -2944,6 +2767,20 @@
               "confidence": "3",
               "riskdesc": "Medium (High)",
               "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
+            },
+            {
+              "name": "Application Error Disclosure",
+              "riskcode": "1",
+              "confidence": "2",
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>"
+            },
+            {
+              "name": "Information Disclosure - Debug Error Messages",
+              "riskcode": "1",
+              "confidence": "2",
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>"
             },
             {
               "name": "Permissions Policy Header Not Set",
@@ -2995,13 +2832,6 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
-              "name": "Non-Storable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
-            },
-            {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
               "confidence": "1",
@@ -3037,11 +2867,9 @@
     "lhr": [
       {
         "requestedUrl": "https://opentermsarchive.org/",
-        "finalUrl": "https://opentermsarchive.org/en",
-        "fetchTime": "2022-10-30T02:01:15.108Z",
-        "runWarnings": [
-          "The page may not be loading as expected because your test URL (https://opentermsarchive.org/) was redirected to https://opentermsarchive.org/en. Try testing the second URL directly."
-        ],
+        "finalUrl": "https://opentermsarchive.org/",
+        "fetchTime": "2022-11-06T01:46:43.484Z",
+        "runWarnings": [],
         "categories": {
           "performance": {
             "title": "Performance",
@@ -3082,49 +2910,49 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4963,
+            "numericValue": 4118,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1095,
-                  "firstMeaningfulPaint": 1095,
-                  "largestContentfulPaint": 1245,
-                  "firstCPUIdle": 4738,
-                  "interactive": 4963,
-                  "speedIndex": 1561,
-                  "estimatedInputLatency": 74,
-                  "totalBlockingTime": 531,
-                  "maxPotentialFID": 343,
+                  "firstContentfulPaint": 1112,
+                  "firstMeaningfulPaint": 1112,
+                  "largestContentfulPaint": 1201,
+                  "firstCPUIdle": 4043,
+                  "interactive": 4118,
+                  "speedIndex": 2185,
+                  "estimatedInputLatency": 24,
+                  "totalBlockingTime": 190,
+                  "maxPotentialFID": 205,
                   "cumulativeLayoutShift": 0.022074844360351564,
-                  "cumulativeLayoutShiftAllFrames": 0,
+                  "cumulativeLayoutShiftAllFrames": 0.022074844360351564,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 369152716,
+                  "observedTimeOriginTs": 514468963,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 369152716,
-                  "observedFirstPaint": 692,
-                  "observedFirstPaintTs": 369845152,
-                  "observedFirstContentfulPaint": 692,
-                  "observedFirstContentfulPaintTs": 369845152,
-                  "observedFirstMeaningfulPaint": 692,
-                  "observedFirstMeaningfulPaintTs": 369845152,
-                  "observedLargestContentfulPaint": 692,
-                  "observedLargestContentfulPaintTs": 369845152,
-                  "observedTraceEnd": 2483,
-                  "observedTraceEndTs": 371635794,
-                  "observedLoad": 1425,
-                  "observedLoadTs": 370577775,
-                  "observedDomContentLoaded": 1055,
-                  "observedDomContentLoadedTs": 370207666,
+                  "observedNavigationStartTs": 514468963,
+                  "observedFirstPaint": 713,
+                  "observedFirstPaintTs": 515181764,
+                  "observedFirstContentfulPaint": 713,
+                  "observedFirstContentfulPaintTs": 515181764,
+                  "observedFirstMeaningfulPaint": 713,
+                  "observedFirstMeaningfulPaintTs": 515181764,
+                  "observedLargestContentfulPaint": 713,
+                  "observedLargestContentfulPaintTs": 515181764,
+                  "observedTraceEnd": 2862,
+                  "observedTraceEndTs": 517331258,
+                  "observedLoad": 1803,
+                  "observedLoadTs": 516271586,
+                  "observedDomContentLoaded": 1208,
+                  "observedDomContentLoadedTs": 515677012,
                   "observedCumulativeLayoutShift": 0.022074844360351564,
-                  "observedCumulativeLayoutShiftAllFrames": 0,
-                  "observedFirstVisualChange": 699,
-                  "observedFirstVisualChangeTs": 369851716,
-                  "observedLastVisualChange": 1149,
-                  "observedLastVisualChangeTs": 370301716,
-                  "observedSpeedIndex": 729,
-                  "observedSpeedIndexTs": 369881871
+                  "observedCumulativeLayoutShiftAllFrames": 0.022074844360351564,
+                  "observedFirstVisualChange": 710,
+                  "observedFirstVisualChangeTs": 515178963,
+                  "observedLastVisualChange": 1293,
+                  "observedLastVisualChangeTs": 515761963,
+                  "observedSpeedIndex": 751,
+                  "observedSpeedIndexTs": 515219890
                 },
                 {
                   "lcpInvalidated": false
@@ -3142,23 +2970,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 45,
+                  "numRequests": 42,
                   "numScripts": 15,
                   "numStylesheets": 3,
                   "numFonts": 3,
-                  "numTasks": 476,
-                  "numTasksOver10ms": 11,
-                  "numTasksOver25ms": 5,
+                  "numTasks": 467,
+                  "numTasksOver10ms": 10,
+                  "numTasksOver25ms": 3,
                   "numTasksOver50ms": 1,
-                  "numTasksOver100ms": 0,
+                  "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 84.309,
-                  "throughput": 12749761.089524508,
-                  "maxRtt": 86.387,
-                  "maxServerLatency": 45.08500000000001,
-                  "totalByteWeight": 665323,
-                  "totalTaskTime": 555.8079999999992,
-                  "mainDocumentTransferSize": 14010
+                  "rtt": 147.12800000000001,
+                  "throughput": 6444792.826359997,
+                  "maxRtt": 148.751,
+                  "maxServerLatency": 142.97600000000003,
+                  "totalByteWeight": 638223,
+                  "totalTaskTime": 455.01499999999993,
+                  "mainDocumentTransferSize": 12965
                 }
               ]
             }
@@ -3217,31 +3045,31 @@
     "http": {
       "url": "https://opentermsarchive.org/fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 30 Oct 2022 02:01:30 GMT",
+      "end_time": "Sun, 06 Nov 2022 01:46:59 GMT",
       "grade": "B",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
       "response_headers": {
-        "Cache-Control": "s-maxage=10, stale-while-revalidate",
+        "Cache-Control": "s-maxage=31536000, stale-while-revalidate",
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 30 Oct 2022 02:01:26 GMT",
-        "ETag": "\"n9ru0m4f261o6p\"",
+        "Date": "Sun, 06 Nov 2022 01:46:56 GMT",
+        "ETag": "\"14up4hipkp51lg2\"",
         "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "DENY",
         "X-Powered-By": "Next.js",
-        "X-Request-ID": "17c2f841-518b-4070-950e-a93d6f4b30e2",
+        "X-Request-ID": "5e1589f1-351d-4474-83e4-7377a7c43676",
         "X-XSS-Protection": "1; mode=block",
-        "x-nextjs-cache": "STALE"
+        "x-nextjs-cache": "HIT"
       },
-      "scan_id": 30493836,
+      "scan_id": 30683112,
       "score": 70,
-      "start_time": "Sun, 30 Oct 2022 02:01:24 GMT",
+      "start_time": "Sun, 06 Nov 2022 01:46:53 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 2,
@@ -3265,12 +3093,12 @@
                 "https://stats.data.gouv.fr"
               ],
               "img-src": [
-                "https://avatars.githubusercontent.com",
+                "https://www.gravatar.com",
                 "'self'",
                 "https://media-exp1.licdn.com",
-                "https://sibyll.in",
-                "https://www.gravatar.com",
+                "https://avatars.githubusercontent.com",
                 "data:",
+                "https://sibyll.in",
                 "https://pbs.twimg.com"
               ],
               "object-src": [
@@ -3365,18 +3193,16 @@
           "expectation": "redirection-to-https",
           "name": "redirection",
           "output": {
-            "destination": "http://opentermsarchive.org/en",
-            "redirects": true,
+            "destination": "http://opentermsarchive.org/",
+            "redirects": false,
             "route": [
-              "http://opentermsarchive.org/",
-              "http://opentermsarchive.org/en/",
-              "http://opentermsarchive.org/en"
+              "http://opentermsarchive.org/"
             ],
             "status_code": 200
           },
           "pass": false,
-          "result": "redirection-not-to-https",
-          "score_description": "Redirects, but final destination is not an HTTPS URL",
+          "result": "redirection-missing",
+          "score_description": "Does not redirect to an HTTPS site",
           "score_modifier": -20
         },
         "referrer-policy": {
@@ -3471,15 +3297,15 @@
       "recipients": [
         "email:3682249898"
       ],
-      "last_check_at": "2022-10-30T01:11:49Z",
-      "next_check_at": "2022-10-30T02:11:13Z",
+      "last_check_at": "2022-11-06T01:23:57Z",
+      "next_check_at": "2022-11-06T02:23:38Z",
       "mute_until": null,
       "favicon_url": "https://opentermsarchive.org/favicon-32x32.png",
       "custom_headers": {},
       "http_verb": "GET/HEAD",
       "http_body": "",
       "ssl": {
-        "tested_at": "2022-10-29T17:14:13Z",
+        "tested_at": "2022-11-05T18:25:30Z",
         "expires_at": "2023-01-24T03:40:10Z",
         "valid": true,
         "error": null
@@ -3488,11 +3314,11 @@
         "apdex": 1,
         "timings": {
           "redirect": 0,
-          "namelookup": 55,
-          "connection": 77,
-          "handshake": 87,
-          "response": 86,
-          "total": 305
+          "namelookup": 11,
+          "connection": 145,
+          "handshake": 160,
+          "response": 150,
+          "total": 466
         }
       },
       "uptimeGrade": "A",
@@ -3884,7 +3710,7 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -4073,7 +3899,7 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "301 Moved Permanently ('/')"
+        "finding": "200 OK ('/')"
       },
       {
         "id": "HTTP_clock_skew",
@@ -4087,7 +3913,7 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095479"
+        "finding": "1667699322"
       },
       {
         "id": "HSTS_time",
@@ -4129,14 +3955,14 @@
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "No application banner found"
+        "finding": "X-Powered-By: Next.js"
       },
       {
         "id": "cookie_count",
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
+        "finding": "0 at '/'"
       },
       {
         "id": "X-Frame-Options",
@@ -4165,6 +3991,13 @@
         "port": "443",
         "severity": "INFO",
         "finding": "1; mode=block"
+      },
+      {
+        "id": "Cache-Control",
+        "ip": "opentermsarchive.org/148.253.96.193",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "s-maxage=31536000, stale-while-revalidate"
       },
       {
         "id": "banner_reverseproxy",
@@ -4240,10 +4073,10 @@
         "id": "BREACH",
         "ip": "opentermsarchive.org/148.253.96.193",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "cve": "CVE-2013-3587",
         "cwe": "CWE-310",
-        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+        "finding": "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
       },
       {
         "id": "POODLE_SSL",
@@ -5027,7 +4860,7 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "OK",
-        "finding": "86 >= 30 days"
+        "finding": "79 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -5216,7 +5049,7 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "301 Moved Permanently ('/')"
+        "finding": "200 OK ('/')"
       },
       {
         "id": "HTTP_clock_skew",
@@ -5230,7 +5063,7 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095621"
+        "finding": "1667699464"
       },
       {
         "id": "HSTS_time",
@@ -5272,14 +5105,14 @@
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "No application banner found"
+        "finding": "X-Powered-By: Next.js"
       },
       {
         "id": "cookie_count",
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
         "severity": "INFO",
-        "finding": "0 at '/' (30x detected, better try target URL of 30x)"
+        "finding": "0 at '/'"
       },
       {
         "id": "X-Frame-Options",
@@ -5308,6 +5141,13 @@
         "port": "443",
         "severity": "INFO",
         "finding": "1; mode=block"
+      },
+      {
+        "id": "Cache-Control",
+        "ip": "opentermsarchive.org/185.21.194.105",
+        "port": "443",
+        "severity": "INFO",
+        "finding": "s-maxage=31536000, stale-while-revalidate"
       },
       {
         "id": "banner_reverseproxy",
@@ -5383,10 +5223,10 @@
         "id": "BREACH",
         "ip": "opentermsarchive.org/185.21.194.105",
         "port": "443",
-        "severity": "OK",
+        "severity": "MEDIUM",
         "cve": "CVE-2013-3587",
         "cwe": "CWE-310",
-        "finding": "not vulnerable, no gzip/deflate/compress/br HTTP compression  - only supplied '/' tested"
+        "finding": "potentially VULNERABLE, gzip deflate HTTP compression detected  - only supplied '/' tested"
       },
       {
         "id": "POODLE_SSL",
@@ -5825,7 +5665,7 @@
           "value": "1",
           "domain": "opentermsarchive.org",
           "path": "/",
-          "expires": 1667097203,
+          "expires": 1667701047,
           "size": 17,
           "httpOnly": false,
           "secure": false,
@@ -5837,10 +5677,10 @@
         },
         {
           "name": "_pk_id.179.cd52",
-          "value": "8b71030aab1384f4.1667095403.",
+          "value": "5a8ad0b3765c9a1e.1667699248.",
           "domain": "opentermsarchive.org",
           "path": "/",
-          "expires": 1701050603,
+          "expires": 1701654448,
           "size": 43,
           "httpOnly": false,
           "secure": false,
@@ -5852,19 +5692,19 @@
         }
       ],
       "headers": {
-        "cache-control": "s-maxage=10, stale-while-revalidate",
+        "cache-control": "s-maxage=31536000, stale-while-revalidate",
         "content-encoding": "gzip",
         "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 30 Oct 2022 02:03:21 GMT",
-        "etag": "\"13gcrisvr3l1wf6\"",
+        "date": "Sun, 06 Nov 2022 01:47:26 GMT",
+        "etag": "\"odx7q4erzg1mmv\"",
         "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
         "vary": "Accept-Encoding",
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
-        "x-nextjs-cache": "STALE",
+        "x-nextjs-cache": "HIT",
         "x-powered-by": "Next.js",
-        "x-request-id": "cf3230ef-ee9e-42f5-9dcc-da2ce98075a3",
+        "x-request-id": "4460255f-840a-4c71-93ad-624a9b25eb3f",
         "x-xss-protection": "1; mode=block"
       },
       "endpoints": [
@@ -5926,193 +5766,10 @@
         }
       ]
     },
-    "wappalyzer": {
-      "urls": {
-        "https://opentermsarchive.org/fr": {
-          "status": 200
-        }
-      },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "node.js.png",
-          "website": "http://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "react",
-          "name": "React",
-          "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
-          "confidence": 100,
-          "version": null,
-          "icon": "React.svg",
-          "website": "https://reactjs.org",
-          "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "next-js",
-          "name": "Next.js",
-          "description": "Next.js is a React framework for developing single page Javascript applications.",
-          "confidence": 100,
-          "version": "12.3.1",
-          "icon": "vercel.svg",
-          "website": "https://nextjs.org",
-          "cpe": "cpe:2.3:a:zeit:next.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 18,
-              "slug": "web-frameworks",
-              "name": "Web frameworks"
-            },
-            {
-              "id": 22,
-              "slug": "web-servers",
-              "name": "Web servers"
-            }
-          ]
-        },
-        {
-          "slug": "matomo-analytics",
-          "name": "Matomo Analytics",
-          "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Matomo.png",
-          "website": "https://matomo.org",
-          "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 10,
-              "slug": "analytics",
-              "name": "Analytics"
-            }
-          ]
-        },
-        {
-          "slug": "lodash",
-          "name": "Lodash",
-          "description": "Lodash is a JavaScript library which provides utility functions for common programming tasks using the functional programming paradigm.",
-          "confidence": 100,
-          "version": "4.17.21",
-          "icon": "Lo-dash.png",
-          "website": "http://www.lodash.com",
-          "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 59,
-              "slug": "javascript-libraries",
-              "name": "JavaScript libraries"
-            }
-          ]
-        },
-        {
-          "slug": "hsts",
-          "name": "HSTS",
-          "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
-          "confidence": 100,
-          "version": null,
-          "icon": "default.svg",
-          "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 16,
-              "slug": "security",
-              "name": "Security"
-            }
-          ]
-        },
-        {
-          "slug": "webpack",
-          "name": "webpack",
-          "description": "Webpack is an open-source JavaScript module bundler.",
-          "confidence": 100,
-          "version": null,
-          "icon": "webpack.svg",
-          "website": "https://webpack.js.org/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "pwa",
-          "name": "PWA",
-          "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
-          "confidence": 100,
-          "version": null,
-          "icon": "PWA.svg",
-          "website": "https://web.dev/progressive-web-apps/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "open-graph",
-          "name": "Open Graph",
-          "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Open Graph.png",
-          "website": "https://ogp.me",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "module-federation",
-          "name": "Module Federation",
-          "description": "Module Federation is a webpack technology for dynamically loading parts of other independently deployed builds.",
-          "confidence": 50,
-          "version": null,
-          "icon": "Module Federation.png",
-          "website": "https://webpack.js.org/concepts/module-federation/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        }
-      ]
-    },
+    "wappalyzer": null,
     "zap": {
       "@version": "2.12.0",
-      "@generated": "Sun, 30 Oct 2022 02:02:41",
+      "@generated": "Sun, 6 Nov 2022 01:46:41",
       "site": [
         {
           "@name": "https://opentermsarchive.org",
@@ -6147,6 +5804,20 @@
               "confidence": "3",
               "riskdesc": "Medium (High)",
               "desc": "<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>"
+            },
+            {
+              "name": "Application Error Disclosure",
+              "riskcode": "1",
+              "confidence": "2",
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>"
+            },
+            {
+              "name": "Information Disclosure - Debug Error Messages",
+              "riskcode": "1",
+              "confidence": "2",
+              "riskdesc": "Low (Medium)",
+              "desc": "<p>The response appeared to contain common error messages returned by platforms such as ASP.NET, and Web-servers such as IIS and Apache. You can configure the list of common debug messages.</p>"
             },
             {
               "name": "Permissions Policy Header Not Set",
@@ -6198,13 +5869,6 @@
               "desc": "<p>The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.</p>"
             },
             {
-              "name": "Non-Storable Content",
-              "riskcode": "0",
-              "confidence": "2",
-              "riskdesc": "Informational (Medium)",
-              "desc": "<p>The response contents are not storable by caching components such as proxy servers. If the response does not contain sensitive, personal or user-specific information, it may benefit from being stored and cached, to improve performance.</p>"
-            },
-            {
               "name": "Re-examine Cache-control Directives",
               "riskcode": "0",
               "confidence": "1",
@@ -6241,7 +5905,7 @@
       {
         "requestedUrl": "https://opentermsarchive.org/fr",
         "finalUrl": "https://opentermsarchive.org/fr",
-        "fetchTime": "2022-10-30T02:02:50.015Z",
+        "fetchTime": "2022-11-06T01:46:50.602Z",
         "runWarnings": [],
         "categories": {
           "performance": {
@@ -6283,49 +5947,49 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 4987,
+            "numericValue": 3948,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 1147,
-                  "firstMeaningfulPaint": 1147,
-                  "largestContentfulPaint": 1147,
-                  "firstCPUIdle": 4912,
-                  "interactive": 4987,
-                  "speedIndex": 1754,
-                  "estimatedInputLatency": 90,
-                  "totalBlockingTime": 678,
-                  "maxPotentialFID": 559,
+                  "firstContentfulPaint": 1009,
+                  "firstMeaningfulPaint": 1009,
+                  "largestContentfulPaint": 1159,
+                  "firstCPUIdle": 3992,
+                  "interactive": 3948,
+                  "speedIndex": 2174,
+                  "estimatedInputLatency": 16,
+                  "totalBlockingTime": 246,
+                  "maxPotentialFID": 283,
                   "cumulativeLayoutShift": 0.05487602233886718,
                   "cumulativeLayoutShiftAllFrames": 0.05487602233886718,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 421869054,
+                  "observedTimeOriginTs": 247515950,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 421869054,
-                  "observedFirstPaint": 771,
-                  "observedFirstPaintTs": 422640441,
-                  "observedFirstContentfulPaint": 771,
-                  "observedFirstContentfulPaintTs": 422640441,
-                  "observedFirstMeaningfulPaint": 771,
-                  "observedFirstMeaningfulPaintTs": 422640441,
-                  "observedLargestContentfulPaint": 771,
-                  "observedLargestContentfulPaintTs": 422640441,
-                  "observedTraceEnd": 2958,
-                  "observedTraceEndTs": 424826605,
-                  "observedLoad": 1895,
-                  "observedLoadTs": 423764315,
-                  "observedDomContentLoaded": 1291,
-                  "observedDomContentLoadedTs": 423160229,
+                  "observedNavigationStartTs": 247515950,
+                  "observedFirstPaint": 728,
+                  "observedFirstPaintTs": 248244047,
+                  "observedFirstContentfulPaint": 728,
+                  "observedFirstContentfulPaintTs": 248244047,
+                  "observedFirstMeaningfulPaint": 728,
+                  "observedFirstMeaningfulPaintTs": 248244047,
+                  "observedLargestContentfulPaint": 728,
+                  "observedLargestContentfulPaintTs": 248244047,
+                  "observedTraceEnd": 2927,
+                  "observedTraceEndTs": 250443182,
+                  "observedLoad": 1868,
+                  "observedLoadTs": 249383614,
+                  "observedDomContentLoaded": 1258,
+                  "observedDomContentLoadedTs": 248773985,
                   "observedCumulativeLayoutShift": 0.05487602233886718,
                   "observedCumulativeLayoutShiftAllFrames": 0.05487602233886718,
-                  "observedFirstVisualChange": 780,
-                  "observedFirstVisualChangeTs": 422649054,
-                  "observedLastVisualChange": 1380,
-                  "observedLastVisualChangeTs": 423249054,
-                  "observedSpeedIndex": 835,
-                  "observedSpeedIndexTs": 422703758
+                  "observedFirstVisualChange": 724,
+                  "observedFirstVisualChangeTs": 248239950,
+                  "observedLastVisualChange": 1340,
+                  "observedLastVisualChangeTs": 248855950,
+                  "observedSpeedIndex": 780,
+                  "observedSpeedIndexTs": 248295568
                 },
                 {
                   "lcpInvalidated": false
@@ -6343,23 +6007,23 @@
               "type": "debugdata",
               "items": [
                 {
-                  "numRequests": 43,
+                  "numRequests": 42,
                   "numScripts": 15,
                   "numStylesheets": 3,
                   "numFonts": 3,
-                  "numTasks": 494,
-                  "numTasksOver10ms": 16,
-                  "numTasksOver25ms": 3,
-                  "numTasksOver50ms": 2,
+                  "numTasks": 547,
+                  "numTasksOver10ms": 6,
+                  "numTasksOver25ms": 2,
+                  "numTasksOver50ms": 1,
                   "numTasksOver100ms": 1,
                   "numTasksOver500ms": 0,
-                  "rtt": 150.365,
-                  "throughput": 6919013.3404715685,
-                  "maxRtt": 151.104,
-                  "maxServerLatency": 76.44599999999997,
-                  "totalByteWeight": 675893,
-                  "totalTaskTime": 599.1479999999998,
-                  "mainDocumentTransferSize": 16978
+                  "rtt": 150.116,
+                  "throughput": 6395697.737038737,
+                  "maxRtt": 151.373,
+                  "maxServerLatency": 108.64500000000001,
+                  "totalByteWeight": 639828,
+                  "totalTaskTime": 398.95699999999954,
+                  "mainDocumentTransferSize": 13572
                 }
               ]
             }
@@ -6418,7 +6082,7 @@
     "http": {
       "url": "https://contribute.opentermsarchive.org",
       "algorithm_version": 2,
-      "end_time": "Sun, 30 Oct 2022 02:01:22 GMT",
+      "end_time": "Sun, 06 Nov 2022 01:45:53 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -6427,17 +6091,17 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 30 Oct 2022 02:01:20 GMT",
-        "ETag": "\"11sxrldlv4xcpb\"",
+        "Date": "Sun, 06 Nov 2022 01:45:50 GMT",
+        "ETag": "\"fhtkparqrscpb\"",
         "Server": "nginx",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Powered-By": "Next.js",
         "x-nextjs-cache": "HIT"
       },
-      "scan_id": 30493830,
+      "scan_id": 30683109,
       "score": 20,
-      "start_time": "Sun, 30 Oct 2022 02:01:13 GMT",
+      "start_time": "Sun, 06 Nov 2022 01:45:44 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 5,
@@ -6998,7 +6662,7 @@
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "OK",
-        "finding": "70 >= 30 days"
+        "finding": "63 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -7201,7 +6865,7 @@
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095391"
+        "finding": "1667699253"
       },
       {
         "id": "HSTS",
@@ -7757,7 +7421,7 @@
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "154"
+        "finding": "132"
       }
     ],
     "thirdparties": {
@@ -7767,8 +7431,8 @@
         "cache-control": "s-maxage=1800, stale-while-revalidate",
         "content-encoding": "gzip",
         "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 30 Oct 2022 02:01:52 GMT",
-        "etag": "\"11sxrldlv4xcpb\"",
+        "date": "Sun, 06 Nov 2022 01:46:23 GMT",
+        "etag": "\"fhtkparqrscpb\"",
         "server": "nginx",
         "vary": "Accept-Encoding",
         "x-nextjs-cache": "HIT",
@@ -7864,164 +7528,10 @@
         }
       ]
     },
-    "wappalyzer": {
-      "urls": {
-        "https://contribute.opentermsarchive.org/": {
-          "status": 200
-        }
-      },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "node.js.png",
-          "website": "http://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "react",
-          "name": "React",
-          "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
-          "confidence": 100,
-          "version": null,
-          "icon": "React.svg",
-          "website": "https://reactjs.org",
-          "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "nginx",
-          "name": "Nginx",
-          "description": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Nginx.svg",
-          "website": "http://nginx.org/en",
-          "cpe": "cpe:2.3:a:nginx:nginx:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 22,
-              "slug": "web-servers",
-              "name": "Web servers"
-            },
-            {
-              "id": 64,
-              "slug": "reverse-proxies",
-              "name": "Reverse proxies"
-            }
-          ]
-        },
-        {
-          "slug": "next-js",
-          "name": "Next.js",
-          "description": "Next.js is a React framework for developing single page Javascript applications.",
-          "confidence": 100,
-          "version": "12.3.1",
-          "icon": "vercel.svg",
-          "website": "https://nextjs.org",
-          "cpe": "cpe:2.3:a:zeit:next.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 18,
-              "slug": "web-frameworks",
-              "name": "Web frameworks"
-            },
-            {
-              "id": 22,
-              "slug": "web-servers",
-              "name": "Web servers"
-            }
-          ]
-        },
-        {
-          "slug": "webpack",
-          "name": "webpack",
-          "description": "Webpack is an open-source JavaScript module bundler.",
-          "confidence": 100,
-          "version": null,
-          "icon": "webpack.svg",
-          "website": "https://webpack.js.org/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "pwa",
-          "name": "PWA",
-          "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
-          "confidence": 100,
-          "version": null,
-          "icon": "PWA.svg",
-          "website": "https://web.dev/progressive-web-apps/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "open-graph",
-          "name": "Open Graph",
-          "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Open Graph.png",
-          "website": "https://ogp.me",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "module-federation",
-          "name": "Module Federation",
-          "description": "Module Federation is a webpack technology for dynamically loading parts of other independently deployed builds.",
-          "confidence": 50,
-          "version": null,
-          "icon": "Module Federation.png",
-          "website": "https://webpack.js.org/concepts/module-federation/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        }
-      ]
-    },
+    "wappalyzer": null,
     "zap": {
       "@version": "2.12.0",
-      "@generated": "Sun, 30 Oct 2022 02:00:55",
+      "@generated": "Sun, 6 Nov 2022 01:45:28",
       "site": [
         {
           "@name": "https://contribute.opentermsarchive.org",
@@ -8143,9 +7653,8 @@
       {
         "requestedUrl": "https://contribute.opentermsarchive.org/",
         "finalUrl": "https://contribute.opentermsarchive.org/",
-        "fetchTime": "2022-10-30T02:01:04.602Z",
+        "fetchTime": "2022-11-06T01:45:37.226Z",
         "runWarnings": [
-          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling).",
           "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_TOO_MANY_REDIRECTS)"
         ],
         "categories": {
@@ -8188,49 +7697,49 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 2965,
+            "numericValue": 2914,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 926,
-                  "firstMeaningfulPaint": 926,
-                  "largestContentfulPaint": 926,
-                  "firstCPUIdle": 3040,
-                  "interactive": 2965,
-                  "speedIndex": 2034,
+                  "firstContentfulPaint": 897,
+                  "firstMeaningfulPaint": 897,
+                  "largestContentfulPaint": 897,
+                  "firstCPUIdle": 2914,
+                  "interactive": 2914,
+                  "speedIndex": 1098,
                   "estimatedInputLatency": 13,
-                  "totalBlockingTime": 36,
-                  "maxPotentialFID": 70,
+                  "totalBlockingTime": 66,
+                  "maxPotentialFID": 114,
                   "cumulativeLayoutShift": 0.0073564453124999995,
                   "cumulativeLayoutShiftAllFrames": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 209635958,
+                  "observedTimeOriginTs": 189097968,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 209635958,
-                  "observedFirstPaint": 684,
-                  "observedFirstPaintTs": 210320445,
-                  "observedFirstContentfulPaint": 684,
-                  "observedFirstContentfulPaintTs": 210320445,
-                  "observedFirstMeaningfulPaint": 684,
-                  "observedFirstMeaningfulPaintTs": 210320445,
-                  "observedLargestContentfulPaint": 684,
-                  "observedLargestContentfulPaintTs": 210320445,
-                  "observedTraceEnd": 2356,
-                  "observedTraceEndTs": 211991545,
-                  "observedLoad": 1142,
-                  "observedLoadTs": 210777764,
-                  "observedDomContentLoaded": 1140,
-                  "observedDomContentLoadedTs": 210776053,
+                  "observedNavigationStartTs": 189097968,
+                  "observedFirstPaint": 520,
+                  "observedFirstPaintTs": 189617585,
+                  "observedFirstContentfulPaint": 520,
+                  "observedFirstContentfulPaintTs": 189617585,
+                  "observedFirstMeaningfulPaint": 520,
+                  "observedFirstMeaningfulPaintTs": 189617585,
+                  "observedLargestContentfulPaint": 520,
+                  "observedLargestContentfulPaintTs": 189617585,
+                  "observedTraceEnd": 1949,
+                  "observedTraceEndTs": 191046520,
+                  "observedLoad": 846,
+                  "observedLoadTs": 189943482,
+                  "observedDomContentLoaded": 770,
+                  "observedDomContentLoadedTs": 189867963,
                   "observedCumulativeLayoutShift": 0.0073564453124999995,
                   "observedCumulativeLayoutShiftAllFrames": 0,
-                  "observedFirstVisualChange": 688,
-                  "observedFirstVisualChangeTs": 210323958,
-                  "observedLastVisualChange": 1288,
-                  "observedLastVisualChangeTs": 210923958,
-                  "observedSpeedIndex": 710,
-                  "observedSpeedIndexTs": 210345586
+                  "observedFirstVisualChange": 527,
+                  "observedFirstVisualChangeTs": 189624968,
+                  "observedLastVisualChange": 1127,
+                  "observedLastVisualChangeTs": 190224968,
+                  "observedSpeedIndex": 546,
+                  "observedSpeedIndexTs": 189644081
                 },
                 {
                   "lcpInvalidated": false
@@ -8252,19 +7761,19 @@
                   "numScripts": 10,
                   "numStylesheets": 3,
                   "numFonts": 2,
-                  "numTasks": 257,
-                  "numTasksOver10ms": 4,
+                  "numTasks": 258,
+                  "numTasksOver10ms": 3,
                   "numTasksOver25ms": 1,
                   "numTasksOver50ms": 0,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 141.947,
-                  "throughput": 8501764.851943044,
-                  "maxRtt": 141.947,
-                  "maxServerLatency": 120.281,
-                  "totalByteWeight": 338112,
-                  "totalTaskTime": 171.81599999999995,
-                  "mainDocumentTransferSize": 5244
+                  "rtt": 109.95100000000001,
+                  "throughput": 10437813.287436366,
+                  "maxRtt": 109.95100000000001,
+                  "maxServerLatency": 100.23599999999998,
+                  "totalByteWeight": 338116,
+                  "totalTaskTime": 128.92300000000003,
+                  "mainDocumentTransferSize": 5238
                 }
               ]
             }
@@ -8318,7 +7827,7 @@
     "http": {
       "url": "https://contribute.opentermsarchive.org/fr",
       "algorithm_version": 2,
-      "end_time": "Sun, 30 Oct 2022 02:01:22 GMT",
+      "end_time": "Sun, 06 Nov 2022 01:45:53 GMT",
       "grade": "F",
       "hidden": false,
       "likelihood_indicator": "MEDIUM",
@@ -8327,17 +7836,17 @@
         "Connection": "keep-alive",
         "Content-Encoding": "gzip",
         "Content-Type": "text/html; charset=utf-8",
-        "Date": "Sun, 30 Oct 2022 02:01:20 GMT",
-        "ETag": "\"11sxrldlv4xcpb\"",
+        "Date": "Sun, 06 Nov 2022 01:45:50 GMT",
+        "ETag": "\"fhtkparqrscpb\"",
         "Server": "nginx",
         "Transfer-Encoding": "chunked",
         "Vary": "Accept-Encoding",
         "X-Powered-By": "Next.js",
         "x-nextjs-cache": "HIT"
       },
-      "scan_id": 30493830,
+      "scan_id": 30683109,
       "score": 20,
-      "start_time": "Sun, 30 Oct 2022 02:01:13 GMT",
+      "start_time": "Sun, 06 Nov 2022 01:45:44 GMT",
       "state": "FINISHED",
       "status_code": 200,
       "tests_failed": 5,
@@ -8898,7 +8407,7 @@
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "OK",
-        "finding": "70 >= 30 days"
+        "finding": "63 >= 30 days"
       },
       {
         "id": "cert_notBefore",
@@ -9094,14 +8603,14 @@
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "-1 seconds from localtime"
+        "finding": "0 seconds from localtime"
       },
       {
         "id": "HTTP_headerTime",
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "1667095869"
+        "finding": "1667699827"
       },
       {
         "id": "HSTS",
@@ -9657,271 +9166,14 @@
         "ip": "contribute.opentermsarchive.org/51.89.227.200",
         "port": "443",
         "severity": "INFO",
-        "finding": "124"
+        "finding": "94"
       }
     ],
-    "thirdparties": {
-      "trackers": [],
-      "cookies": [],
-      "headers": {
-        "cache-control": "s-maxage=1800, stale-while-revalidate",
-        "content-encoding": "gzip",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Sun, 30 Oct 2022 02:10:01 GMT",
-        "etag": "\"o30zpt9i68cvs\"",
-        "server": "nginx",
-        "vary": "Accept-Encoding",
-        "x-nextjs-cache": "HIT",
-        "x-powered-by": "Next.js"
-      },
-      "endpoints": [
-        {
-          "hostname": "contribute.opentermsarchive.org",
-          "ip": "51.89.227.200",
-          "geoip": {
-            "city": {
-              "geoname_id": 2643743,
-              "names": {
-                "de": "London",
-                "en": "London",
-                "es": "Londres",
-                "fr": "Londres",
-                "ja": "ロンドン",
-                "pt-BR": "Londres",
-                "ru": "Лондон",
-                "zh-CN": "伦敦"
-              }
-            },
-            "continent": {
-              "code": "EU",
-              "geoname_id": 6255148,
-              "names": {
-                "de": "Europa",
-                "en": "Europe",
-                "es": "Europa",
-                "fr": "Europe",
-                "ja": "ヨーロッパ",
-                "pt-BR": "Europa",
-                "ru": "Европа",
-                "zh-CN": "欧洲"
-              }
-            },
-            "country": {
-              "geoname_id": 2635167,
-              "iso_code": "GB",
-              "names": {
-                "de": "Vereinigtes Königreich",
-                "en": "United Kingdom",
-                "es": "Reino Unido",
-                "fr": "Royaume Uni",
-                "ja": "英国",
-                "pt-BR": "Reino Unido",
-                "ru": "Британия",
-                "zh-CN": "英国"
-              }
-            },
-            "location": {
-              "accuracy_radius": 500,
-              "latitude": 51.5164,
-              "longitude": -0.093,
-              "time_zone": "Europe/London"
-            },
-            "postal": {
-              "code": "EC2V"
-            },
-            "registered_country": {
-              "geoname_id": 3017382,
-              "is_in_european_union": true,
-              "iso_code": "FR",
-              "names": {
-                "de": "Frankreich",
-                "en": "France",
-                "es": "Francia",
-                "fr": "France",
-                "ja": "フランス共和国",
-                "pt-BR": "França",
-                "ru": "Франция",
-                "zh-CN": "法国"
-              }
-            },
-            "subdivisions": [
-              {
-                "geoname_id": 6269131,
-                "iso_code": "ENG",
-                "names": {
-                  "de": "England",
-                  "en": "England",
-                  "es": "Inglaterra",
-                  "fr": "Angleterre",
-                  "ja": "イングランド",
-                  "pt-BR": "Inglaterra",
-                  "ru": "Англия",
-                  "zh-CN": "英格兰"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "wappalyzer": {
-      "urls": {
-        "https://contribute.opentermsarchive.org/fr": {
-          "status": 200
-        }
-      },
-      "technologies": [
-        {
-          "slug": "node-js",
-          "name": "Node.js",
-          "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
-          "confidence": 100,
-          "version": null,
-          "icon": "node.js.png",
-          "website": "http://nodejs.org",
-          "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 27,
-              "slug": "programming-languages",
-              "name": "Programming languages"
-            }
-          ]
-        },
-        {
-          "slug": "react",
-          "name": "React",
-          "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
-          "confidence": 100,
-          "version": null,
-          "icon": "React.svg",
-          "website": "https://reactjs.org",
-          "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 12,
-              "slug": "javascript-frameworks",
-              "name": "JavaScript frameworks"
-            }
-          ]
-        },
-        {
-          "slug": "nginx",
-          "name": "Nginx",
-          "description": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Nginx.svg",
-          "website": "http://nginx.org/en",
-          "cpe": "cpe:2.3:a:nginx:nginx:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 22,
-              "slug": "web-servers",
-              "name": "Web servers"
-            },
-            {
-              "id": 64,
-              "slug": "reverse-proxies",
-              "name": "Reverse proxies"
-            }
-          ]
-        },
-        {
-          "slug": "next-js",
-          "name": "Next.js",
-          "description": "Next.js is a React framework for developing single page Javascript applications.",
-          "confidence": 100,
-          "version": "12.3.1",
-          "icon": "vercel.svg",
-          "website": "https://nextjs.org",
-          "cpe": "cpe:2.3:a:zeit:next.js:*:*:*:*:*:*:*:*",
-          "categories": [
-            {
-              "id": 18,
-              "slug": "web-frameworks",
-              "name": "Web frameworks"
-            },
-            {
-              "id": 22,
-              "slug": "web-servers",
-              "name": "Web servers"
-            }
-          ]
-        },
-        {
-          "slug": "webpack",
-          "name": "webpack",
-          "description": "Webpack is an open-source JavaScript module bundler.",
-          "confidence": 100,
-          "version": null,
-          "icon": "webpack.svg",
-          "website": "https://webpack.js.org/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "pwa",
-          "name": "PWA",
-          "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
-          "confidence": 100,
-          "version": null,
-          "icon": "PWA.svg",
-          "website": "https://web.dev/progressive-web-apps/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "open-graph",
-          "name": "Open Graph",
-          "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
-          "confidence": 100,
-          "version": null,
-          "icon": "Open Graph.png",
-          "website": "https://ogp.me",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        },
-        {
-          "slug": "module-federation",
-          "name": "Module Federation",
-          "description": "Module Federation is a webpack technology for dynamically loading parts of other independently deployed builds.",
-          "confidence": 50,
-          "version": null,
-          "icon": "Module Federation.png",
-          "website": "https://webpack.js.org/concepts/module-federation/",
-          "cpe": null,
-          "categories": [
-            {
-              "id": 19,
-              "slug": "miscellaneous",
-              "name": "Miscellaneous"
-            }
-          ]
-        }
-      ]
-    },
+    "thirdparties": null,
+    "wappalyzer": null,
     "zap": {
       "@version": "2.12.0",
-      "@generated": "Sun, 30 Oct 2022 02:09:23",
+      "@generated": "Sun, 6 Nov 2022 01:53:22",
       "site": [
         {
           "@name": "https://contribute.opentermsarchive.org",
@@ -10043,9 +9295,8 @@
       {
         "requestedUrl": "https://contribute.opentermsarchive.org/fr",
         "finalUrl": "https://contribute.opentermsarchive.org/fr",
-        "fetchTime": "2022-10-30T02:09:32.228Z",
+        "fetchTime": "2022-11-06T01:53:30.270Z",
         "runWarnings": [
-          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/master/docs/throttling.md#cpu-throttling).",
           "Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_TOO_MANY_REDIRECTS)"
         ],
         "categories": {
@@ -10088,49 +9339,49 @@
             "description": "Collects all available metrics.",
             "score": null,
             "scoreDisplayMode": "informative",
-            "numericValue": 3037,
+            "numericValue": 3131,
             "numericUnit": "millisecond",
             "details": {
               "type": "debugdata",
               "items": [
                 {
-                  "firstContentfulPaint": 936,
-                  "firstMeaningfulPaint": 936,
-                  "largestContentfulPaint": 1161,
-                  "firstCPUIdle": 3037,
-                  "interactive": 3037,
-                  "speedIndex": 1405,
-                  "estimatedInputLatency": 13,
-                  "totalBlockingTime": 161,
-                  "maxPotentialFID": 187,
-                  "cumulativeLayoutShift": 0.008830078125,
+                  "firstContentfulPaint": 951,
+                  "firstMeaningfulPaint": 951,
+                  "largestContentfulPaint": 1149,
+                  "firstCPUIdle": 3131,
+                  "interactive": 3131,
+                  "speedIndex": 1207,
+                  "estimatedInputLatency": 24,
+                  "totalBlockingTime": 210,
+                  "maxPotentialFID": 198,
+                  "cumulativeLayoutShift": 0.0032314453125,
                   "cumulativeLayoutShiftAllFrames": 0,
                   "observedTimeOrigin": 0,
-                  "observedTimeOriginTs": 376031064,
+                  "observedTimeOriginTs": 156239957,
                   "observedNavigationStart": 0,
-                  "observedNavigationStartTs": 376031064,
-                  "observedFirstPaint": 635,
-                  "observedFirstPaintTs": 376666092,
-                  "observedFirstContentfulPaint": 635,
-                  "observedFirstContentfulPaintTs": 376666092,
-                  "observedFirstMeaningfulPaint": 635,
-                  "observedFirstMeaningfulPaintTs": 376666092,
-                  "observedLargestContentfulPaint": 635,
-                  "observedLargestContentfulPaintTs": 376666092,
-                  "observedTraceEnd": 2012,
-                  "observedTraceEndTs": 378042996,
-                  "observedLoad": 901,
-                  "observedLoadTs": 376931744,
-                  "observedDomContentLoaded": 838,
-                  "observedDomContentLoadedTs": 376868800,
-                  "observedCumulativeLayoutShift": 0.008830078125,
+                  "observedNavigationStartTs": 156239957,
+                  "observedFirstPaint": 560,
+                  "observedFirstPaintTs": 156800072,
+                  "observedFirstContentfulPaint": 560,
+                  "observedFirstContentfulPaintTs": 156800072,
+                  "observedFirstMeaningfulPaint": 560,
+                  "observedFirstMeaningfulPaintTs": 156800072,
+                  "observedLargestContentfulPaint": 560,
+                  "observedLargestContentfulPaintTs": 156800072,
+                  "observedTraceEnd": 1789,
+                  "observedTraceEndTs": 158029128,
+                  "observedLoad": 708,
+                  "observedLoadTs": 156947877,
+                  "observedDomContentLoaded": 633,
+                  "observedDomContentLoadedTs": 156873204,
+                  "observedCumulativeLayoutShift": 0.0032314453125,
                   "observedCumulativeLayoutShiftAllFrames": 0,
-                  "observedFirstVisualChange": 637,
-                  "observedFirstVisualChangeTs": 376668064,
-                  "observedLastVisualChange": 1253,
-                  "observedLastVisualChangeTs": 377284064,
-                  "observedSpeedIndex": 661,
-                  "observedSpeedIndexTs": 376691932
+                  "observedFirstVisualChange": 487,
+                  "observedFirstVisualChangeTs": 156726957,
+                  "observedLastVisualChange": 1087,
+                  "observedLastVisualChangeTs": 157326957,
+                  "observedSpeedIndex": 507,
+                  "observedSpeedIndexTs": 156747397
                 },
                 {
                   "lcpInvalidated": false
@@ -10152,19 +9403,19 @@
                   "numScripts": 10,
                   "numStylesheets": 3,
                   "numFonts": 2,
-                  "numTasks": 269,
+                  "numTasks": 250,
                   "numTasksOver10ms": 4,
                   "numTasksOver25ms": 3,
                   "numTasksOver50ms": 1,
                   "numTasksOver100ms": 0,
                   "numTasksOver500ms": 0,
-                  "rtt": 105.011,
-                  "throughput": 10829754.024225978,
-                  "maxRtt": 105.011,
-                  "maxServerLatency": 73.74600000000001,
-                  "totalByteWeight": 338243,
-                  "totalTaskTime": 208.22399999999993,
-                  "mainDocumentTransferSize": 5324
+                  "rtt": 81.007,
+                  "throughput": 10704719.254034651,
+                  "maxRtt": 81.007,
+                  "maxServerLatency": 15.982,
+                  "totalByteWeight": 338233,
+                  "totalTaskTime": 234.49699999999967,
+                  "mainDocumentTransferSize": 5322
                 }
               ]
             }
@@ -10192,10 +9443,6 @@
       "testsslExpireSoon": false,
       "testsslExpireDate": "2023-01-08T10:31:00.000Z",
       "testsslGrade": "A",
-      "cookiesGrade": "A",
-      "cookiesCount": 0,
-      "trackersGrade": "A",
-      "trackersCount": 0,
       "lighthouse_performance": 1,
       "lighthouse_performanceGrade": "A",
       "lighthouse_accessibility": 0.96,
