@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 6 Nov 2022 01:46:34",
+	"@generated": "Sun, 13 Nov 2022 01:39:50",
 	"site":[ 
 		{
 			"@name": "https://opentermsarchive.org",
@@ -95,7 +95,7 @@
 					"reference": "<p>http://projects.webappsec.org/Cross-Site-Request-Forgery</p><p>http://cwe.mitre.org/data/definitions/352.html</p>",
 					"cweid": "352",
 					"wascid": "9",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90022",
@@ -108,7 +108,7 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"uri": "https://opentermsarchive.org/_next/static/chunks/main-345fb04c90bf7dcd.js",
+							"uri": "https://opentermsarchive.org/_next/static/chunks/main-278b7394d830db8e.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -121,7 +121,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "282"
+					"sourceid": "262"
 				},
 				{
 					"pluginid": "10055",
@@ -148,14 +148,14 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -169,7 +169,7 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -182,7 +182,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10055",
@@ -209,14 +209,14 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -230,7 +230,7 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
@@ -243,7 +243,7 @@
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "90022",
@@ -269,7 +269,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "244"
+					"sourceid": "307"
 				},
 				{
 					"pluginid": "10023",
@@ -295,7 +295,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "244"
+					"sourceid": "307"
 				},
 				{
 					"pluginid": "10063",
@@ -322,35 +322,21 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
+							"uri": "https://opentermsarchive.org/accessibility",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/media",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/privacy-policy",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -364,21 +350,35 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/media",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/privacy-policy",
+							"uri": "https://opentermsarchive.org/privacy-policy",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -418,35 +418,21 @@
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
+							"uri": "https://opentermsarchive.org/accessibility",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/media",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "X-Powered-By: Next.js"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/privacy-policy",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -460,21 +446,35 @@
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/media",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/media",
+							"uri": "https://opentermsarchive.org/privacy-policy",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js"
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "X-Powered-By: Next.js"
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -504,82 +504,82 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/media",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/privacy-policy",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/media",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/media",
+							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/sh5G0PqEPIUPFPDq4xFwB/_buildManifest"
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+						},
+						{
+							"uri": "https://opentermsarchive.org/safari-pinned-tab.svg",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "org/TR/2001/REC-SVG-20010904/DTD/svg10"
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
 						}
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFD!\uFFFDm\\x000f\uFFFDC\uFFFDP\uFFFDO\\x000e\uFFFD1\\x0017\\x0000\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFDG\uFFFD)\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0014*\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -609,7 +609,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "272"
+					"sourceid": "250"
 				},
 				{
 					"pluginid": "10024",
@@ -642,7 +642,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "481"
+					"sourceid": "487"
 				},
 				{
 					"pluginid": "10027",
@@ -669,35 +669,21 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
+							"uri": "https://opentermsarchive.org/accessibility",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/media",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "query"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/privacy-policy",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -711,21 +697,35 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/media",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/media",
+							"uri": "https://opentermsarchive.org/privacy-policy",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "query"
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -738,7 +738,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10109",
@@ -765,35 +765,21 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a target=\"_blank\" rel=\"noopener\"><p>See the change</p></a>"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
+							"uri": "https://opentermsarchive.org/accessibility",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/media",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<noscript data-n-css=\"\"></noscript>"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/privacy-policy",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -807,21 +793,35 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "<a target=\"_blank\" rel=\"noopener\"><p>Voir le changement</p></a>"
-						},
-						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/media",
+							"uri": "https://opentermsarchive.org/media",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://opentermsarchive.org/privacy-policy",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "<noscript data-n-css=\"\"></noscript>"
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -834,7 +834,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10015",
@@ -861,39 +861,18 @@
 							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "s-maxage=31536000, stale-while-revalidate"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "s-maxage=31536000, stale-while-revalidate"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "s-maxage=31536000, stale-while-revalidate"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/media",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "s-maxage=1800, stale-while-revalidate"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/privacy-policy",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "s-maxage=31536000, stale-while-revalidate"
+							"evidence": "s-maxage=1800, stale-while-revalidate"
 						},
 						{
 							"uri": "https://opentermsarchive.org/fr",
@@ -903,14 +882,14 @@
 							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -929,9 +908,23 @@
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "public, max-age=0"
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "s-maxage=1800, stale-while-revalidate"
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "s-maxage=10, stale-while-revalidate"
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>For secure content, ensure the cache-control HTTP header is set with \"no-cache, no-store, must-revalidate\". If an asset should be cached consider setting the directives \"public, max-age, immutable\".</p>",
 					"otherinfo": "",
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
@@ -964,28 +957,14 @@
 							"evidence": "s-maxage=31536000"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en",
+							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "s-maxage=31536000"
+							"evidence": "s-maxage=1800"
 						},
 						{
-							"uri": "https://opentermsarchive.org/en/case-studies",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=31536000"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/legal-notice",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=31536000"
-						},
-						{
-							"uri": "https://opentermsarchive.org/en/media",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -999,18 +978,32 @@
 							"evidence": "s-maxage=31536000"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/case-studies",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "s-maxage=31536000"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr/legal-notice",
+							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "s-maxage=31536000"
+						},
+						{
+							"uri": "https://opentermsarchive.org/stats",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=1800"
+						},
+						{
+							"uri": "https://opentermsarchive.org/subscribe",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=10"
 						}
 					],
 					"count": "9",
@@ -1052,7 +1045,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "7"
 				},
 				{
 					"pluginid": "10031",
@@ -1099,7 +1092,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "481"
+					"sourceid": "487"
 				}
 			]
 		}
