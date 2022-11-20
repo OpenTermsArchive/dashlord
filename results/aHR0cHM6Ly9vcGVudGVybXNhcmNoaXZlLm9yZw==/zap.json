@@ -1,6 +1,6 @@
 {
 	"@version": "2.12.0",
-	"@generated": "Sun, 13 Nov 2022 01:39:50",
+	"@generated": "Sun, 20 Nov 2022 01:43:12",
 	"site":[ 
 		{
 			"@name": "https://opentermsarchive.org",
@@ -108,7 +108,7 @@
 					"desc": "<p>This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application. The alert could be a false positive if the error message is found inside a documentation page.</p>",
 					"instances":[ 
 						{
-							"uri": "https://opentermsarchive.org/_next/static/chunks/main-278b7394d830db8e.js",
+							"uri": "https://opentermsarchive.org/_next/static/chunks/main-345fb04c90bf7dcd.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -121,7 +121,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "262"
+					"sourceid": "256"
 				},
 				{
 					"pluginid": "10055",
@@ -167,16 +167,9 @@
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
-						},
-						{
-							"uri": "https://opentermsarchive.org/subscribe",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>frame-ancestors, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -228,16 +221,9 @@
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
-						},
-						{
-							"uri": "https://opentermsarchive.org/subscribe",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -269,7 +255,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "307"
+					"sourceid": "370"
 				},
 				{
 					"pluginid": "10023",
@@ -295,7 +281,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "307"
+					"sourceid": "370"
 				},
 				{
 					"pluginid": "10063",
@@ -504,56 +490,56 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/about",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/fr",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/media",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/safari-pinned-tab.svg",
@@ -567,19 +553,19 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						},
 						{
 							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "/_next/static/Gtp0eAKZ-B7sj8jZPUFCp/_buildManifest"
+							"evidence": "/_next/static/psdgaBouRiVFqKtX6y5QQ/_buildManifest"
 						}
 					],
 					"count": "11",
 					"solution": "<p>Manually confirm that the Base64 data does not leak sensitive information, and that the data cannot be aggregated/used to exploit other vulnerabilities.</p>",
-					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFDG\uFFFD)\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x0014*\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
+					"otherinfo": "<p>\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uCD6Bbs\uFFFDlv\\x0006\uFFFD\uFFFD\uFFFDbTZ\uFFFD\uFFFD~\uFFFD\uFFFD\\x0004?\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\\x001a\uFFFD'\u07B2</p>",
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
@@ -609,7 +595,7 @@
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>",
 					"cweid": "345",
 					"wascid": "12",
-					"sourceid": "250"
+					"sourceid": "245"
 				},
 				{
 					"pluginid": "10024",
@@ -642,7 +628,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "487"
+					"sourceid": "477"
 				},
 				{
 					"pluginid": "10027",
@@ -738,7 +724,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10109",
@@ -834,7 +820,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10015",
@@ -865,14 +851,14 @@
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "s-maxage=1800, stale-while-revalidate"
+							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
 							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "s-maxage=1800, stale-while-revalidate"
+							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
 							"uri": "https://opentermsarchive.org/fr",
@@ -961,14 +947,14 @@
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "s-maxage=1800"
+							"evidence": "s-maxage=31536000"
 						},
 						{
 							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "s-maxage=1800"
+							"evidence": "s-maxage=31536000"
 						},
 						{
 							"uri": "https://opentermsarchive.org/fr",
@@ -1045,7 +1031,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "27"
 				},
 				{
 					"pluginid": "10031",
@@ -1092,7 +1078,7 @@
 					"reference": "<p>http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</p>",
 					"cweid": "20",
 					"wascid": "20",
-					"sourceid": "487"
+					"sourceid": "477"
 				}
 			]
 		}
