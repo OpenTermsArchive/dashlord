@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 4 Dec 2022 01:23:55",
+	"@generated": "Sun, 11 Dec 2022 01:29:30",
 	"site":[ 
 		{
 			"@name": "https://contribute.opentermsarchive.org",
@@ -33,7 +33,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "46"
+					"sourceid": "49"
 				},
 				{
 					"pluginid": "10038",
@@ -106,7 +106,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10063",
@@ -120,13 +120,6 @@
 					"instances":[ 
 						{
 							"uri": "https://contribute.opentermsarchive.org/",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/260-d050db2e3b9deeca.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -169,6 +162,13 @@
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/RLbsLo14QqGNr_LsOhjrz/_buildManifest.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/_next/static/RLbsLo14QqGNr_LsOhjrz/_ssgManifest.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -393,14 +393,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/72aa4db077c1bac1.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-ca6e6228965beaf5.js",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/816f0b1ca35205e9.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/css/72aa4db077c1bac1.css",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
 							"attack": "",
@@ -772,7 +772,7 @@
 					"reference": "<p>https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</p><p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</p><p>https://grayduck.mn/2021/09/13/cache-control-recommendations/</p>",
 					"cweid": "525",
 					"wascid": "13",
-					"sourceid": "3"
+					"sourceid": "8"
 				},
 				{
 					"pluginid": "10049",
