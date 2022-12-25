@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 18 Dec 2022 01:14:17",
+	"@generated": "Sun, 25 Dec 2022 01:16:51",
 	"site":[ 
 		{
 			"@name": "https://opentermsarchive.org",
@@ -122,7 +122,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "256"
+					"sourceid": "261"
 				},
 				{
 					"pluginid": "10055",
@@ -149,13 +149,6 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/about",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
-						},
-						{
 							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -163,21 +156,21 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>The following directives either allow wildcard sources (or ancestors), are not defined, or are overly broadly defined: </p><p>frame-ancestors, form-action</p><p></p><p>The directive(s): frame-ancestors, form-action are among the directives that do not fallback to default-src, missing/excluding them is the same as allowing anything.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -210,13 +203,6 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/about",
-							"method": "GET",
-							"param": "Content-Security-Policy",
-							"attack": "",
-							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
-						},
-						{
 							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Content-Security-Policy",
@@ -224,21 +210,21 @@
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/legal-notice",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "Content-Security-Policy",
 							"attack": "",
 							"evidence": "default-src 'self'; script-src 'self' 'unsafe-eval' https://stats.data.gouv.fr; object-src 'none'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://stats.data.gouv.fr; img-src 'self' data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src 'self' https://stats.data.gouv.fr"
 						}
 					],
-					"count": "6",
+					"count": "5",
 					"solution": "<p>Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.</p>",
 					"otherinfo": "<p>style-src includes unsafe-inline.</p>",
 					"reference": "<p>http://www.w3.org/TR/CSP2/</p><p>http://www.w3.org/TR/CSP/</p><p>http://caniuse.com/#search=content+security+policy</p><p>http://content-security-policy.com/</p><p>https://github.com/shapesecurity/salvation</p><p>https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources</p>",
@@ -285,14 +271,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/budget",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -320,14 +306,14 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": ""
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -381,14 +367,14 @@
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/budget",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -416,14 +402,14 @@
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "X-Powered-By: Next.js"
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -477,14 +463,14 @@
 							"evidence": "/_next/static/LCsJttIBB27ytm0fhW7er/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/budget",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "/_next/static/LCsJttIBB27ytm0fhW7er/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -512,14 +498,14 @@
 							"evidence": "/_next/static/LCsJttIBB27ytm0fhW7er/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "/_next/static/LCsJttIBB27ytm0fhW7er/_buildManifest"
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -572,7 +558,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "497"
+					"sourceid": "498"
 				},
 				{
 					"pluginid": "10027",
@@ -613,14 +599,14 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/budget",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -648,14 +634,14 @@
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "query"
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -709,14 +695,14 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/budget",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -744,14 +730,14 @@
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "<noscript data-n-css=\"\"></noscript>"
 						},
 						{
-							"uri": "https://opentermsarchive.org/subscribe",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -798,14 +784,14 @@
 							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/accessibility",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
 							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
@@ -826,6 +812,13 @@
 							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						},
 						{
+							"uri": "https://opentermsarchive.org/privacy-policy",
+							"method": "GET",
+							"param": "Cache-Control",
+							"attack": "",
+							"evidence": "s-maxage=31536000, stale-while-revalidate"
+						},
+						{
 							"uri": "https://opentermsarchive.org/robots.txt",
 							"method": "GET",
 							"param": "Cache-Control",
@@ -840,18 +833,11 @@
 							"evidence": "public, max-age=0"
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "Cache-Control",
 							"attack": "",
-							"evidence": "s-maxage=1800, stale-while-revalidate"
-						},
-						{
-							"uri": "https://opentermsarchive.org/subscribe",
-							"method": "GET",
-							"param": "Cache-Control",
-							"attack": "",
-							"evidence": "s-maxage=10, stale-while-revalidate"
+							"evidence": "s-maxage=31536000, stale-while-revalidate"
 						}
 					],
 					"count": "11",
@@ -894,14 +880,14 @@
 							"evidence": "s-maxage=31536000"
 						},
 						{
-							"uri": "https://opentermsarchive.org/case-studies",
+							"uri": "https://opentermsarchive.org/accessibility",
 							"method": "GET",
 							"param": "",
 							"attack": "",
 							"evidence": "s-maxage=31536000"
 						},
 						{
-							"uri": "https://opentermsarchive.org/fr",
+							"uri": "https://opentermsarchive.org/case-studies",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -915,6 +901,13 @@
 							"evidence": "s-maxage=31536000"
 						},
 						{
+							"uri": "https://opentermsarchive.org/media",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": "s-maxage=31536000"
+						},
+						{
 							"uri": "https://opentermsarchive.org/privacy-policy",
 							"method": "GET",
 							"param": "",
@@ -922,18 +915,11 @@
 							"evidence": "s-maxage=31536000"
 						},
 						{
-							"uri": "https://opentermsarchive.org/stats",
+							"uri": "https://opentermsarchive.org/subscribe/french-elections",
 							"method": "GET",
 							"param": "",
 							"attack": "",
-							"evidence": "s-maxage=1800"
-						},
-						{
-							"uri": "https://opentermsarchive.org/subscribe",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": "s-maxage=10"
+							"evidence": "s-maxage=31536000"
 						}
 					],
 					"count": "9",
@@ -975,7 +961,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "7"
+					"sourceid": "6"
 				}
 			]
 		}
