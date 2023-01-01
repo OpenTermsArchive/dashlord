@@ -127,7 +127,7 @@ td {
 	</h2>
 
 	<h3>
-		Generated on Sun, 25 Dec 2022 01:16:51
+		Generated on Sun, 1 Jan 2023 01:25:14
 	</h3>
 
 	
@@ -196,7 +196,7 @@ td {
 			<tr>
 				<td><a href="#10202">Absence of Anti-CSRF Tokens</a></td>
 				<td align="center" class="risk-2">Medium</td>
-				<td align="center">10</td>
+				<td align="center">9</td>
 			</tr>
 			<tr>
 				<td><a href="#90022">Application Error Disclosure</a></td>
@@ -226,12 +226,12 @@ td {
 			<tr>
 				<td><a href="#10094">Base64 Disclosure</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">11</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10024">Information Disclosure - Sensitive Information in URL</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">3</td>
+				<td align="center">2</td>
 			</tr>
 			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
@@ -460,32 +460,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/fr/subscribe?consent=on&amp;email=foo-bar%40example.com">https://opentermsarchive.org/fr/subscribe?consent=on&amp;email=foo-bar%40example.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">&lt;form&gt;</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
@@ -563,7 +537,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">10</td>
+					<td width="80%">9</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -790,6 +764,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://opentermsarchive.org/about">https://opentermsarchive.org/about</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-eval&#39; https://stats.data.gouv.fr; object-src &#39;none&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr; img-src &#39;self&#39; data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src &#39;self&#39; https://stats.data.gouv.fr</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
@@ -816,33 +816,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/legal-notice">https://opentermsarchive.org/legal-notice</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-eval&#39; https://stats.data.gouv.fr; object-src &#39;none&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr; img-src &#39;self&#39; data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src &#39;self&#39; https://stats.data.gouv.fr</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/privacy-policy">https://opentermsarchive.org/privacy-policy</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -988,6 +962,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://opentermsarchive.org/about">https://opentermsarchive.org/about</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Content-Security-Policy</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-eval&#39; https://stats.data.gouv.fr; object-src &#39;none&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr; img-src &#39;self&#39; data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src &#39;self&#39; https://stats.data.gouv.fr</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
@@ -1014,33 +1014,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/legal-notice">https://opentermsarchive.org/legal-notice</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Content-Security-Policy</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-eval&#39; https://stats.data.gouv.fr; object-src &#39;none&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; connect-src &#39;self&#39; https://stats.data.gouv.fr; img-src &#39;self&#39; data: https://media-exp1.licdn.com https://www.gravatar.com https://avatars.githubusercontent.com https://pbs.twimg.com https://sibyll.in; frame-src &#39;self&#39; https://stats.data.gouv.fr</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/privacy-policy">https://opentermsarchive.org/privacy-policy</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1186,6 +1160,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://opentermsarchive.org/_next/static/chunks/webpack-68887c5beb16b30d.js">https://opentermsarchive.org/_next/static/chunks/webpack-68887c5beb16b30d.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/about">https://opentermsarchive.org/about</a></td>
 					</tr>
 					<tr>
@@ -1238,7 +1238,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/budget">https://opentermsarchive.org/budget</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1264,7 +1264,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1316,32 +1316,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/media">https://opentermsarchive.org/media</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%"></td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/privacy-policy">https://opentermsarchive.org/privacy-policy</a></td>
 					</tr>
 					<tr>
@@ -1368,7 +1342,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1394,7 +1368,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1589,7 +1563,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/budget">https://opentermsarchive.org/budget</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1615,7 +1589,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1719,7 +1693,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1745,7 +1719,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1931,7 +1905,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/budget">https://opentermsarchive.org/budget</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -1957,7 +1931,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2061,7 +2035,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/safari-pinned-tab.svg">https://opentermsarchive.org/safari-pinned-tab.svg</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">org/TR/2001/REC-SVG-20010904/DTD/svg10</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2087,7 +2087,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2112,7 +2112,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">11</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2192,32 +2192,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/fr/subscribe?consent=on&amp;email=foo-bar%40example.com">https://opentermsarchive.org/fr/subscribe?consent=on&amp;email=foo-bar%40example.com</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">email</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">foo-bar@example.com</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/subscribe?consent=on&amp;email=foo-bar%40example.com">https://opentermsarchive.org/subscribe?consent=on&amp;email=foo-bar%40example.com</a></td>
 					</tr>
 					<tr>
@@ -2243,7 +2217,7 @@ td {
 				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">3</td>
+					<td width="80%">2</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -2398,7 +2372,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/budget">https://opentermsarchive.org/budget</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2424,7 +2398,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2528,7 +2502,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2554,7 +2528,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2734,7 +2708,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/budget">https://opentermsarchive.org/budget</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2760,7 +2734,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2864,7 +2838,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -2890,7 +2864,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3095,33 +3069,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/legal-notice">https://opentermsarchive.org/legal-notice</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%">Cache-Control</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">s-maxage=31536000, stale-while-revalidate</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/media">https://opentermsarchive.org/media</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3225,7 +3173,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3245,7 +3193,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">s-maxage=31536000, stale-while-revalidate</td>
+						<td width="80%">s-maxage=1800, stale-while-revalidate</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">Cache-Control</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">s-maxage=10, stale-while-revalidate</td>
 					</tr>
 				
 				<tr>
@@ -3388,7 +3362,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/accessibility">https://opentermsarchive.org/accessibility</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3414,7 +3388,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/case-studies">https://opentermsarchive.org/case-studies</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/fr">https://opentermsarchive.org/fr</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3466,32 +3440,6 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/media">https://opentermsarchive.org/media</a></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Method</td>
-						<td width="80%">GET</td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Parameter</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Attack</td>
-						<td width="80%"></td>
-					</tr>
-					<tr>
-						<td width="20%"
-							class="indent2">Evidence</td>
-						<td width="80%">s-maxage=31536000</td>
-					</tr>
-				
-					<tr>
-						<td width="20%"
-							class="indent1">URL</td>
 						<td width="80%"><a href="https://opentermsarchive.org/privacy-policy">https://opentermsarchive.org/privacy-policy</a></td>
 					</tr>
 					<tr>
@@ -3518,7 +3466,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://opentermsarchive.org/subscribe/french-elections">https://opentermsarchive.org/subscribe/french-elections</a></td>
+						<td width="80%"><a href="https://opentermsarchive.org/stats">https://opentermsarchive.org/stats</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -3538,7 +3486,33 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent2">Evidence</td>
-						<td width="80%">s-maxage=31536000</td>
+						<td width="80%">s-maxage=1800</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://opentermsarchive.org/subscribe">https://opentermsarchive.org/subscribe</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">s-maxage=10</td>
 					</tr>
 				
 				<tr>
