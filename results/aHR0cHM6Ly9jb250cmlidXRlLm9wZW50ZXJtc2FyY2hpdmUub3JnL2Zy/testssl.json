@@ -346,7 +346,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "67 >= 30 days"
+              "finding"      : "60 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -549,7 +549,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1672536745"
+              "finding"      : "1673141317"
           }
 ,         {
               "id"           : "HSTS",
@@ -1105,6 +1105,6 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "95"
+              "finding"      : "93"
           }
 ]
