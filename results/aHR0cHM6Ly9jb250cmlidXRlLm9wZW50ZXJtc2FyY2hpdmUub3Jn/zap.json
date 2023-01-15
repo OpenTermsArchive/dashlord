@@ -1,7 +1,7 @@
 {
 	"@programName": "OWASP ZAP",
 	"@version": "2.12.0",
-	"@generated": "Sun, 8 Jan 2023 01:20:19",
+	"@generated": "Sun, 15 Jan 2023 01:19:02",
 	"site":[ 
 		{
 			"@name": "https://contribute.opentermsarchive.org",
@@ -33,7 +33,7 @@
 					"reference": "",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "47"
+					"sourceid": "48"
 				},
 				{
 					"pluginid": "10038",
@@ -80,7 +80,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</p><p>https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</p><p>http://www.w3.org/TR/CSP/</p><p>http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</p><p>http://www.html5rocks.com/en/tutorials/security/content-security-policy/</p><p>http://caniuse.com/#feat=contentsecuritypolicy</p><p>http://content-security-policy.com/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10020",
@@ -120,7 +120,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</p>",
 					"cweid": "1021",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10063",
@@ -147,13 +147,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/framework-5f9637ca1e7aac10.js",
-							"method": "GET",
-							"param": "",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/main-7a4bb7041d5ba526.js",
 							"method": "GET",
 							"param": "",
@@ -162,6 +155,13 @@
 						},
 						{
 							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/_app-9989f10d7df126e7.js",
+							"method": "GET",
+							"param": "",
+							"attack": "",
+							"evidence": ""
+						},
+						{
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/pages/index-731814a0df45a113.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -216,7 +216,7 @@
 					"reference": "<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy</p><p>https://developers.google.com/web/updates/2018/06/feature-policy</p><p>https://scotthelme.co.uk/a-new-security-header-feature-policy/</p><p>https://w3c.github.io/webappsec-feature-policy/</p><p>https://www.smashingmagazine.com/2018/12/feature-policy/</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10037",
@@ -312,7 +312,7 @@
 					"reference": "<p>http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</p><p>http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10035",
@@ -339,7 +339,7 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/72aa4db077c1bac1.css",
+							"uri": "https://contribute.opentermsarchive.org/_next/static/chunks/webpack-ca6e6228965beaf5.js",
 							"method": "GET",
 							"param": "",
 							"attack": "",
@@ -449,13 +449,6 @@
 							"evidence": ""
 						},
 						{
-							"uri": "https://contribute.opentermsarchive.org/_next/static/css/816f0b1ca35205e9.css",
-							"method": "GET",
-							"param": "X-Content-Type-Options",
-							"attack": "",
-							"evidence": ""
-						},
-						{
 							"uri": "https://contribute.opentermsarchive.org/apple-touch-icon.png",
 							"method": "GET",
 							"param": "X-Content-Type-Options",
@@ -505,13 +498,13 @@
 							"evidence": ""
 						}
 					],
-					"count": "12",
+					"count": "11",
 					"solution": "<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p><p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>",
 					"otherinfo": "<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p><p>At \"High\" threshold this scan rule will not alert on client or server error responses.</p>",
 					"reference": "<p>http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p><p>https://owasp.org/www-community/Security_Headers</p>",
 					"cweid": "693",
 					"wascid": "15",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10094",
@@ -586,7 +579,7 @@
 					"reference": "<p>http://projects.webappsec.org/w/page/13246936/Information%20Leakage</p>",
 					"cweid": "200",
 					"wascid": "13",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10019",
@@ -755,7 +748,7 @@
 					"reference": "",
 					"cweid": "-1",
 					"wascid": "-1",
-					"sourceid": "6"
+					"sourceid": "1"
 				},
 				{
 					"pluginid": "10049",
@@ -882,7 +875,7 @@
 					"reference": "<p>https://tools.ietf.org/html/rfc7234</p><p>https://tools.ietf.org/html/rfc7231</p><p>http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</p>",
 					"cweid": "524",
 					"wascid": "13",
-					"sourceid": "1"
+					"sourceid": "6"
 				},
 				{
 					"pluginid": "10049",
