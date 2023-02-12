@@ -117,7 +117,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "LOW",
@@ -125,14 +125,14 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
@@ -206,7 +206,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "sessionresumption_ID",
@@ -353,7 +353,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "48 >= 30 days"
+              "finding"      : "41 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -556,7 +556,7 @@
               "ip"           : "opentermsarchive.org/185.21.194.105",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1675560363"
+              "finding"      : "1676165223"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1253,7 +1253,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "LOW",
@@ -1261,14 +1261,14 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
@@ -1489,7 +1489,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "48 >= 30 days"
+              "finding"      : "41 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -1692,7 +1692,7 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1675560509"
+              "finding"      : "1676165354"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -2283,6 +2283,6 @@
               "ip"           : "opentermsarchive.org/148.253.96.193",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "296"
+              "finding"      : "266"
           }
 ]
