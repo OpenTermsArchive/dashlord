@@ -117,7 +117,7 @@
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_AVERAGE",
+              "id"           : "cipherlist_OBSOLETED",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "LOW",
@@ -125,14 +125,14 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipherlist_GOOD",
+              "id"           : "cipherlist_STRONG_NOFS",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
               "finding"      : "not offered"
           }
 ,         {
-              "id"           : "cipherlist_STRONG",
+              "id"           : "cipherlist_STRONG_FS",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "OK",
@@ -276,7 +276,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "04461FF76D48144C085FD6173BA60EB05E88"
+              "finding"      : "038CF17E66B1B067375DE95BA3D14B006952"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -290,21 +290,21 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "85C5B4DCD406A827A4072048E9A8E1C8EC12AFC8"
+              "finding"      : "F28AC32F14D824556026B118A1B8F0A4E104C71D"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "069A12FD3E8C0C76F0184BB3B514F228839B3E0F4FE2114CE78B97738B0D6DDD"
+              "finding"      : "D54907A3C5B00343A3B9D11C4AC4E3A5B10168C6DF934A47C446A02D8B355041"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFQjCCBCqgAwIBAgISBEYf921IFEwIX9YXO6YOsF6IMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMjEyMDkxODM4MDVaFw0yMzAzMDkxODM4MDRaMCoxKDAmBgNVBAMTH2NvbnRyaWJ1dGUub3BlbnRlcm1zYXJjaGl2ZS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDBdLISDWHYe4J6TAXkNJtBLvYeu3W2hiJ6/rCR5XDAgztyuymyiQpv8ahCdHQgWy7b0JNH8sn6UDOX/s5vWWKtzPL+u0/H9dVNeQzKgu1McqpN2TMdUozqhGsSftRA/YVkX9zqud5Ys5MiY7AFRMOVoLkZMlOD57UuHEPHdu2mLP2hIjQkdLsNOmQ8ndRfOFR0EuqItVcIO9NSlHI4glOSlorUa4PnEPLFJctFvobCjeEG3kb1ku7V+Q29XZukcuzZMujUFyH4e6JQDRp0GPcRIQ4DSfD4PPzPhU9KrLPm0ewdcMp0EcxD9sKA1e7l4y+/dlIDAqHU6IfY2D8E3kHzAgMBAAGjggJYMIICVDAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFHf7qI1NOhazp77PCSN5OyxYNwsuMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCoGA1UdEQQjMCGCH2NvbnRyaWJ1dGUub3BlbnRlcm1zYXJjaGl2ZS5vcmcwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggECBgorBgEEAdZ5AgQCBIHzBIHwAO4AdQC3Pvsk35xNunXyOcW6WPRsXfxCz3qfNcSeHQmBJe20mQAAAYT4ZRe2AAAEAwBGMEQCIEB+0ZzxRiX9HZyowVmAmN8Q2a2LJ7UAOyLa4i/62tvGAiBZUADBwXl0jYB5HTIXEUDBQw3BC/SHHvx/FzWu7KoSqwB1AHoyjFTYty22IOo44FIe6YQWcDIThU070ivBOlejUutSAAABhPhlF9cAAAQDAEYwRAIgIJ1yQaONKWgXWEOXCfq/gz9UW6UpgqzaDO5DwT+JRLwCIDTiDtyeXHuNE6sBDTtKNEA9O30UWJll8eYN+3GVPKvIMA0GCSqGSIb3DQEBCwUAA4IBAQBenWnbEQLWPRg+GnKk7TyUt1PPjx7jOAsmQOM86ckALC9wF1M3tQRHg7WvY4NcGRvA+GkHAnVS3Kuve1ufps2145KfuewE7cCAxOar298Ec+huN4NsPZoSo1WPkkZI/ecB7Ipkn9gQzrzutlZDOGtuQa34kyPPzZ935teAIBxgcIhxEfe1JW0Tchr+dp4k3D+BWU6M1sTONloCQFfCpZJXhuEyya3XDMbAFOliKaaQkS0OjfKJ32re7Axu+CovBL/cZ6q5R+NXXw4Y6v+VU2m0ao5QJopR6LRJkFsjIy1WxW+tri2ZwPJFehL1EEBrFn4uuOVSiKOD0J0/cL/rZqU6\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFQzCCBCugAwIBAgISA4zxfmaxsGc3Xelbo9FLAGlSMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yMzAyMDgwMzMxMzlaFw0yMzA1MDkwMzMxMzhaMCoxKDAmBgNVBAMTH2NvbnRyaWJ1dGUub3BlbnRlcm1zYXJjaGl2ZS5vcmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDKqlyJpz4As7jBIvp4N2vcR+/cd884rm88o1kLdrXSydmm9ru8lyzszMQf5WyezpKv8yP2imGMzwyfpXG+iFEfcgZGVIgg2h/yMcFnlw228hcvnO3kjxMbNlHrhg+28m9AEtPpgAiKm/97AnJGbAFMixqPGR/mNrfvYflrlXDETlK4SXwaYglAS312I0CcnsE62cEV+dXJndTCFAsPJ2JouiBUdV/O3gB6mHENY5Wa6hNKh5s2WPLNS+6EQa7V6m8bvhwJraBnM8fouSlyV/AHw2UUxcIKDwAMGqY/skNneWSVrJirvKe0aeDKTLPV2OuSV8doak6eCYuhP4cYDiTBAgMBAAGjggJZMIICVTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFLTp6F4jCpf6GJsNcfIWJOm+OSOLMB8GA1UdIwQYMBaAFBQusxe3WFbLrlAJQOYfr52LFMLGMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL3IzLm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vcjMuaS5sZW5jci5vcmcvMCoGA1UdEQQjMCGCH2NvbnRyaWJ1dGUub3BlbnRlcm1zYXJjaGl2ZS5vcmcwTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdgB6MoxU2LcttiDqOOBSHumEFnAyE4VNO9IrwTpXo1LrUgAAAYYvSycRAAAEAwBHMEUCIQC1LfmC+4q6nKBy+68IR49u5X2CYq18PTJrWBhnZti6gAIgfAUrvgBOpux51BvTFVZssXAP3WwLnnHwmM6p6jEPw9sAdQDoPtDaPvUGNTLnVyi8iWvJA9PL0RFr7Otp4Xd9bQa9bgAAAYYvSyb2AAAEAwBGMEQCIGLp5XDc8GAn7QcbBHLmPE3iRxQpkAaliURIj9++lwBXAiBOJ1x3O2ns4KVK7OTBEc1NeLLETvIYgLz3j0tR87G1QzANBgkqhkiG9w0BAQsFAAOCAQEAVSSvX5M7AFH0J0IJQdroAO7Sp1E/jVT4AhqKo4Y35e8yaJhHoousOfdQmRzlFFi4lUVXUiHApWWPgL5BYDV/Fd4yWbiELjxYtrg+Uf5KLf+VsJoFoph8C51vRGSJLpwJ0DT0CG28CH2My/PknQTvqoRGXGNc/gWdIzPUciFa1AC9iq38hJMfYewbS2uehtAURyCkwFNFXAKzFj0oI34YKhfwRHUcfRZva3vg8D9rvBEvA+jP618Udg7j3Ug2HBps3QBc3XG+kxv1E+g4WSzskRHl9nwhXUwCMCt9QRYaBMFvn6zdu7fE5cdv+FGCKZwWGDkWgYhK1vMzkMEn1y/DMA==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -353,21 +353,21 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "32 >= 30 days"
+              "finding"      : "86 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2022-12-09 18:38"
+              "finding"      : "2023-02-08 03:31"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2023-03-09 18:38"
+              "finding"      : "2023-05-09 03:31"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -556,7 +556,7 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1675560682"
+              "finding"      : "1676165517"
           }
 ,         {
               "id"           : "HSTS",
@@ -729,7 +729,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=069A12FD3E8C0C76F0184BB3B514F228839B3E0F4FE2114CE78B97738B0D6DDD"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=D54907A3C5B00343A3B9D11C4AC4E3A5B10168C6DF934A47C446A02D8B355041"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1112,6 +1112,6 @@
               "ip"           : "contribute.opentermsarchive.org/51.89.227.200",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "97"
+              "finding"      : "139"
           }
 ]
