@@ -3,7 +3,7 @@
     "404": [],
     "url": "https://opentermsarchive.org",
     "repositories": [
-      "ambanum/OpenTermsArchive.org"
+      "OpenTermsArchive/opentermsarchive.org"
     ],
     "http": {
       "url": "https://opentermsarchive.org",
@@ -3188,7 +3188,7 @@
     "404": [],
     "url": "https://opentermsarchive.org/fr",
     "repositories": [
-      "ambanum/OpenTermsArchive.org"
+      "OpenTermsArchive/opentermsarchive.org"
     ],
     "http": {
       "url": "https://opentermsarchive.org/fr",

@@ -22,11 +22,11 @@ tools:
 urls:
   - url: https://opentermsarchive.org
     repositories:
-      - ambanum/OpenTermsArchive.org
+      - OpenTermsArchive/opentermsarchive.org
 
   - url: https://opentermsarchive.org/fr
     repositories:
-      - ambanum/OpenTermsArchive.org
+      - OpenTermsArchive/opentermsarchive.org
 
   - url: https://contribute.opentermsarchive.org
     repositories:
